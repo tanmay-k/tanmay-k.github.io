@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study: Digital Lending and Invoice Financing Platform by Tanmay.">
+  <title>Digital Lending &amp; Invoice Financing Platform | Tanmay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --brand: #3457d5;
+      --brand-dark: #233b96;
+      --soft: #f5f7fb;
+    }
+
+    body { color: var(--ink); background: #fff; }
+    .navbar-brand { letter-spacing: .02em; }
+    .hero {
+      background: linear-gradient(135deg, #172b70 0%, var(--brand) 58%, #4e7cf2 100%);
+      color: #fff;
+    }
+    .hero .eyebrow, .section-eyebrow {
+      color: #b9c8ff;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+      letter-spacing: -.04em;
+    }
+    .hero-summary { max-width: 790px; color: #e1e8ff; font-size: 1.15rem; }
+    .hero-meta { border-top: 1px solid rgba(255, 255, 255, .25); }
+    .hero-meta strong { display: block; color: #fff; }
+    .hero-meta span { color: #c9d4ff; font-size: .9rem; }
+    .section-eyebrow { color: var(--brand); }
+    .section-heading { letter-spacing: -.03em; }
+    .soft-section { background: var(--soft); }
+    .content-card, .info-card {
+      border: 1px solid #e7eaf1;
+      border-radius: 1rem;
+      background: #fff;
+      height: 100%;
+    }
+    .content-card { padding: 1.5rem; }
+    .info-card { padding: 1.25rem; }
+    .info-card h3 { font-size: 1rem; margin-bottom: .5rem; }
+    .info-card p, .content-card p, .content-card li {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .badge-tech {
+      background: #e9edff;
+      color: var(--brand-dark);
+      font-weight: 600;
+      padding: .6rem .8rem;
+    }
+    .workflow-step { position: relative; padding-left: 3.5rem; }
+    .workflow-step:not(:last-child) { padding-bottom: 2rem; }
+    .workflow-step:not(:last-child)::after {
+      background: #dbe2ff;
+      content: "";
+      height: calc(100% - 1.5rem);
+      left: .75rem;
+      position: absolute;
+      top: 1.5rem;
+      width: 2px;
+    }
+    .step-number {
+      align-items: center;
+      background: var(--brand);
+      border: 4px solid #e9edff;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      height: 1.5rem;
+      justify-content: center;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 1.5rem;
+      z-index: 1;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+    .btn-brand { background: var(--brand); color: #fff; }
+    .btn-brand:hover { background: var(--brand-dark); color: #fff; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">Tanmay</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#projectNav"
+        aria-controls="projectNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="projectNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero py-5">
+    <div class="container py-lg-5">
+      <p class="eyebrow mb-3">Project case study</p>
+      <h1 class="fw-bold mb-4">Digital Lending &amp; Invoice Financing Platform</h1>
+      <p class="hero-summary mb-5">
+        A financial-services platform that helps small and medium-sized businesses access and
+        manage short-term financing through loans and eligible invoice-based funding.
+      </p>
+      <div class="hero-meta row g-4 pt-4">
+        <div class="col-6 col-md-3"><strong>Industry</strong><span>FinTech and lending</span></div>
+        <div class="col-6 col-md-3"><strong>Project type</strong><span>Loan management platform</span></div>
+        <div class="col-6 col-md-3"><strong>Core stack</strong><span>Java, Spring Boot, Maven</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Software engineer</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <p class="section-eyebrow mb-2">01 / Overview</p>
+            <h2 class="section-heading fw-bold mb-4">Managing the complete financing lifecycle</h2>
+            <p class="lead text-secondary">
+              The platform supports businesses from their first financing application through
+              credit assessment, approval, disbursement, repayment, and loan closure.
+            </p>
+            <p class="text-secondary mb-0">
+              It also supports invoice financing, allowing eligible business invoices to be
+              captured, validated, and used as the basis for obtaining short-term funding. Internal
+              teams can review applications, monitor active loans, manage exceptions, and keep
+              customers informed throughout the process.
+          </div>
+          <div class="col-lg-4">
+            <div class="info-card">
+              <h3>Project goals</h3>
+              <ul class="mb-0 ps-3">
+                <li>Provide a consistent digital lending journey.</li>
+                <li>Support invoice-based financing workflows.</li>
+                <li>Improve visibility into loan and repayment status.</li>
+                <li>Strengthen operational traceability and reliability.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">02 / Key capabilities</p>
+        <h2 class="section-heading fw-bold mb-4">One platform for lending operations</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Customer and application management</h3>
+              <p class="mb-0">Business registration, customer information, financing requests, terms, and application status are managed in a structured workflow.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Credit and invoice assessment</h3>
+              <p class="mb-0">Customer and business information supports eligibility decisions, while invoice data is validated before financing amounts are calculated.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Loan servicing and collections</h3>
+              <p class="mb-0">Approved loans, disbursements, installments, outstanding balances, overdue payments, and collection actions can be tracked over time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-eyebrow mb-2">03 / Financing journey</p>
+            <h2 class="section-heading fw-bold mb-4">From customer request to repayment</h2>
+            <p class="text-secondary">
+              The application connects customer-facing activity with internal lending operations.
+              Each stage gives the next team the context needed to make decisions and keep the
+              financing record accurate.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="workflow-step">
+              <span class="step-number">1</span>
+              <h3 class="h5">Onboarding and application</h3>
+              <p class="mb-0">A business is registered and submits a loan or invoice financing request with the required information, amount, and terms.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">2</span>
+              <h3 class="h5">Assessment and approval</h3>
+              <p class="mb-0">Customer, business, and invoice information is reviewed to determine eligibility, financing limits, and approval decisions.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">3</span>
+              <h3 class="h5">Disbursement and servicing</h3>
+              <p class="mb-0">Approved financing is disbursed and tracked through repayment schedules, installments, balances, and status changes.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">4</span>
+              <h3 class="h5">Collections and closure</h3>
+              <p class="mb-0">Payments and overdue amounts are recorded, collection workflows are supported, and completed financing is closed with a durable history.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">04 / Technologies and practices</p>
+        <h2 class="section-heading fw-bold mb-4">A maintainable foundation for financial workflows</h2>
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">Java</h3>
+              <p class="mb-0">A strongly typed foundation for implementing business rules and reliable lending workflows.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">Spring Boot</h3>
+              <p class="mb-0">Backend services and application components supporting the platform’s core capabilities.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">Maven</h3>
+              <p class="mb-0">Build and dependency management for the multi-module application codebase.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">Operational controls</h3>
+              <p class="mb-0">Asynchronous logging and audit trails for observable, traceable critical operations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2" aria-label="Technology tags">
+          <span class="badge badge-tech">Java</span>
+          <span class="badge badge-tech">Spring Boot</span>
+          <span class="badge badge-tech">Maven</span>
+          <span class="badge badge-tech">REST services</span>
+          <span class="badge badge-tech">Async logging</span>
+          <span class="badge badge-tech">Audit logging</span>
+          <span class="badge badge-tech">Java 21 migration</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <p class="section-eyebrow mb-2">05 / My role</p>
+            <h2 class="section-heading fw-bold mb-4">Improving the platform from codebase to runtime</h2>
+            <p class="text-secondary">I worked on the development, maintenance, modernization, and operational reliability of application components supporting the lending lifecycle.</p>
+            <ul class="text-secondary lh-lg">
+              <li>Consolidated 11 fragmented repositories into 5 to simplify the distributed monolith.</li>
+              <li>Unblocked the critical migration from Java 8 to Java 21 by reducing dependency complexity.</li>
+              <li>Optimized batch processing and reduced execution time by 40%.</li>
+              <li>Implemented asynchronous logging to reduce the impact of logging on application work.</li>
+              <li>Implemented audit logs for critical operations and improved traceability.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="content-card">
+              <p class="section-eyebrow mb-2">06 / Outcomes</p>
+              <h2 class="section-heading h3 fw-bold mb-4">A more reliable platform for lending teams</h2>
+              <p>The work reduced structural complexity, improved batch performance, and strengthened the operational visibility needed for a financial platform.</p>
+              <div class="row g-3 mt-2">
+                <div class="col-6"><strong class="d-block fs-4 text-primary">11 → 5</strong><span class="text-secondary">Repositories consolidated</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">40%</strong><span class="text-secondary">Batch execution time reduced</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">Java 21</strong><span class="text-secondary">Migration unblocked</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">Audit-ready</strong><span class="text-secondary">Critical operations tracked</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container text-center py-4">
+        <p class="section-eyebrow mb-2">07 / Reflection</p>
+        <h2 class="section-heading fw-bold mb-3">What I learned</h2>
+        <p class="lead text-secondary mx-auto" style="max-width: 760px;">
+          Financial platforms require both domain accuracy and engineering discipline. This project
+          strengthened my experience with lifecycle-driven workflows, legacy modernization,
+          performance optimization, and the observability needed to operate critical systems.
+        </p>
+        <a class="btn btn-brand mt-3" href="../index.html#projects">Back to projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>&copy; 2026 Tanmay. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
