@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .project-description {
+      min-height: 4.5rem;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -19,9 +24,11 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#personal-projects">Personal Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-outline-light btn-sm ms-lg-2 mt-2 mt-lg-0" href="assets/tanmay-kulkarni-resume.pdf" download>Download Resume</a></li>
         </ul>
       </div>
     </div>
@@ -33,6 +40,7 @@
       <img src="profile.jpg" alt="Profile Photo" class="rounded-circle mb-3" width="150" height="150">
       <h1 class="fw-bold">Tanmay Kulkarni</h1>
       <p class="lead">Senior Software Engineer | Building scalable web apps</p>
+      <a href="assets/tanmay-kulkarni-resume.pdf" class="btn btn-light btn-lg mt-2" download>Download Resume</a>
     </div>
   </header>
 
@@ -47,41 +55,81 @@
   <!-- Projects -->
   <section id="projects" class="py-5 bg-light">
     <div class="container">
-      <h2 class="mb-4">Projects</h2>
-      <div class="row">
+      <h2 class="mb-2">Professional Projects</h2>
+      <p class="text-muted mb-4">Selected work focused on scalable platforms, workflow automation, and financial services.</p>
+      <div class="row g-4">
         <div class="col-md-6">
-          <div class="card mb-4">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Third-Party Agent Onboarding Platform</h5>
-              <p class="card-text">A digital onboarding experience that helps a financial services provider bring new third-party agents into its network with greater speed, visibility, and consistency.</p>
+              <p class="card-text project-description">A digital onboarding experience that helps a financial services provider bring new third-party agents into its network with greater speed, visibility, and consistency.</p>
+              <div class="mb-3" aria-label="Technologies used">
+                <span class="badge text-bg-secondary me-1">.NET</span>
+                <span class="badge text-bg-secondary me-1">REST APIs</span>
+                <span class="badge text-bg-secondary">SQL Server</span>
+              </div>
               <a href="projects/agent-onboarding.html" class="btn btn-primary">View Project Details</a>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Fintech Lending & Invoice Financing Platform</h5>
-              <p class="card-text">A platform that provides seamless lending and invoice financing solutions for businesses.</p>
-              <a href="projects/fintech-platform.html" class="btn btn-primary">View Project Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-4">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">AI-Powered Note-Taker</h5>
-              <p class="card-text">A smart note-taking application that uses AI to summarize and organize your notes.</p>
+              <p class="card-text project-description">A smart note-taking application that uses AI to summarize and organize your notes.</p>
+              <div class="mb-3" aria-label="Technologies used">
+                <span class="badge text-bg-secondary me-1">.NET 8</span>
+                <span class="badge text-bg-secondary me-1">EF Core</span>
+                <span class="badge text-bg-secondary">REST APIs</span>
+              </div>
               <a href="projects/ai-powered-notetaker.html" class="btn btn-primary">View Project Details</a>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card mb-4">
+          <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Project Four</h5>
-              <p class="card-text">Short description of your project.</p>
-              <a href="projects/project-four.html" class="btn btn-primary">View Project Details</a>
+              <h5 class="card-title">Biotech Lab Digitization</h5>
+              <p class="card-text project-description">A workflow modernization initiative that digitized manual experiment recording, reduced operational friction, and made lab data easier to validate and reuse across research teams.</p>
+              <div class="mb-3" aria-label="Technologies used">
+                <span class="badge text-bg-secondary me-1">ASP.NET Core</span>
+                <span class="badge text-bg-secondary me-1">REST APIs</span>
+                <span class="badge text-bg-secondary">SQL Server</span>
+              </div>
+              <a href="projects/biotech-lab-digitization.html" class="btn btn-primary">View Project Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fintech Lending & Invoice Financing Platform</h5>
+              <p class="card-text project-description">A platform that provides seamless lending and invoice financing solutions for businesses.</p>
+              <div class="mb-3" aria-label="Technologies used">
+                <span class="badge text-bg-secondary me-1">C#</span>
+                <span class="badge text-bg-secondary me-1">.NET</span>
+                <span class="badge text-bg-secondary">MySQL</span>
+              </div>
+              <a href="projects/fintech-platform.html" class="btn btn-primary">View Project Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Projects -->
+  <section id="personal-projects" class="py-5">
+    <div class="container">
+      <h2 class="mb-2">Personal Projects</h2>
+      <p class="text-muted mb-4">Independent projects that show experimentation, product thinking, and continued learning.</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Personal Project</h5>
+              <p class="card-text">Project details coming soon.</p>
+              <span class="btn btn-outline-secondary disabled" aria-disabled="true">Details Coming Soon</span>
             </div>
           </div>
         </div>
@@ -92,13 +140,51 @@
   <!-- Skills -->
   <section id="skills" class="py-5">
     <div class="container">
-      <h2 class="mb-4">Skills</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Languages: Java, C#, Erlang</li>
-        <li class="list-group-item">Frameworks: Spring Boot, .NET Core 8, Entity Framework</li>
-        <li class="list-group-item">Databases: MySQL, SQL Server, AWS DynamoDB</li>
-        <li class="list-group-item">Tools: Git</li>
-      </ul>
+      <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4">
+        <div>
+          <h2 class="mb-1">Technology Proficiency</h2>
+          <p class="text-muted mb-0">A quick guide to the technologies I use most often.</p>
+        </div>
+        <small class="text-muted">Expert / Advanced / Working knowledge</small>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Expert</th>
+              <th scope="col">Advanced</th>
+              <th scope="col">Working knowledge</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Languages</th>
+              <td>Java</td>
+              <td>C#</td>
+              <td>Erlang</td>
+            </tr>
+            <tr>
+              <th scope="row">Frameworks</th>
+              <td>Spring Boot</td>
+              <td>.NET 8, Entity Framework</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Databases</th>
+              <td>MySQL</td>
+              <td>SQL Server</td>
+              <td>AWS DynamoDB</td>
+            </tr>
+            <tr>
+              <th scope="row">Tools</th>
+              <td></td>
+              <td></td>
+              <td>Git</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
