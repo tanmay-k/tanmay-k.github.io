@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study: AI Meeting Notetaker and Talent Performance Platform by Tanmay.">
+  <title>AI Meeting Notetaker &amp; Talent Performance Platform | Tanmay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --brand: #3457d5;
+      --brand-dark: #233b96;
+      --soft: #f5f7fb;
+    }
+
+    body { color: var(--ink); background: #fff; }
+    .navbar-brand { letter-spacing: .02em; }
+    .hero {
+      background: linear-gradient(135deg, #172b70 0%, var(--brand) 58%, #4e7cf2 100%);
+      color: #fff;
+    }
+    .hero .eyebrow, .section-eyebrow {
+      color: #b9c8ff;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+      letter-spacing: -.04em;
+    }
+    .hero-summary { max-width: 790px; color: #e1e8ff; font-size: 1.15rem; }
+    .hero-meta { border-top: 1px solid rgba(255, 255, 255, .25); }
+    .hero-meta strong { display: block; color: #fff; }
+    .hero-meta span { color: #c9d4ff; font-size: .9rem; }
+    .section-eyebrow { color: var(--brand); }
+    .section-heading { letter-spacing: -.03em; }
+    .soft-section { background: var(--soft); }
+    .content-card, .info-card {
+      border: 1px solid #e7eaf1;
+      border-radius: 1rem;
+      background: #fff;
+      height: 100%;
+    }
+    .content-card { padding: 1.5rem; }
+    .info-card { padding: 1.25rem; }
+    .info-card h3 { font-size: 1rem; margin-bottom: .5rem; }
+    .info-card p, .content-card p, .content-card li {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .badge-tech {
+      background: #e9edff;
+      color: var(--brand-dark);
+      font-weight: 600;
+      padding: .6rem .8rem;
+    }
+    .workflow-step { position: relative; padding-left: 3.5rem; }
+    .workflow-step:not(:last-child) { padding-bottom: 2rem; }
+    .workflow-step:not(:last-child)::after {
+      background: #dbe2ff;
+      content: "";
+      height: calc(100% - 1.5rem);
+      left: .75rem;
+      position: absolute;
+      top: 1.5rem;
+      width: 2px;
+    }
+    .step-number {
+      align-items: center;
+      background: var(--brand);
+      border: 4px solid #e9edff;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      height: 1.5rem;
+      justify-content: center;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 1.5rem;
+      z-index: 1;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+    .btn-brand { background: var(--brand); color: #fff; }
+    .btn-brand:hover { background: var(--brand-dark); color: #fff; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">Tanmay Kulkarni</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#projectNav"
+        aria-controls="projectNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="projectNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero py-5">
+    <div class="container py-lg-5">
+      <p class="eyebrow mb-3">Project case study</p>
+      <h1 class="fw-bold mb-4">AI Meeting Notetaker &amp; Talent Performance Platform</h1>
+      <p class="hero-summary mb-5">
+        An AI-enabled collaboration platform for small and medium-sized teams that turns scheduled
+        online meetings into searchable transcripts and concise, useful summaries.
+      </p>
+      <div class="hero-meta row g-4 pt-4">
+        <div class="col-6 col-md-3"><strong>Industry</strong><span>AI and talent management</span></div>
+        <div class="col-6 col-md-3"><strong>Project type</strong><span>Collaboration platform</span></div>
+        <div class="col-6 col-md-3"><strong>Core stack</strong><span>.NET 8, EF Core, REST APIs</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Backend developer</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <p class="section-eyebrow mb-2">01 / Overview</p>
+            <h2 class="section-heading fw-bold mb-4">Turning conversations into useful team knowledge</h2>
+            <p class="lead text-secondary">
+              The platform helps small and medium-sized teams manage talent performance and capture
+              the value of their online meetings.
+            </p>
+            <p class="text-secondary mb-0">
+              Its automated meeting notetaker joins scheduled meetings, records the conversation,
+              generates a transcript, and uses an AI model to produce a concise summary. The backend
+              coordinates scheduling, meeting state, generated artifacts, and access to completed
+              meeting content.
+          </div>
+          <div class="col-lg-4">
+            <div class="info-card">
+              <h3>Project goals</h3>
+              <ul class="mb-0 ps-3">
+                <li>Make automated meeting capture easy to schedule.</li>
+                <li>Track each meeting through its processing lifecycle.</li>
+                <li>Give users reliable access to transcripts and summaries.</li>
+                <li>Connect the frontend, notetaker, and AI services consistently.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">02 / Key capabilities</p>
+        <h2 class="section-heading fw-bold mb-4">A reliable backend for AI-assisted meetings</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Meeting scheduling</h3>
+              <p class="mb-0">Users can schedule a notetaker session to automatically join an online meeting at a specified time.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Lifecycle visibility</h3>
+              <p class="mb-0">Meetings can be retrieved and managed by lifecycle status, including scheduled, in-progress, and completed states.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Transcript access</h3>
+              <p class="mb-0">After processing is complete, users can access and download the generated meeting transcript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-eyebrow mb-2">03 / Meeting lifecycle</p>
+            <h2 class="section-heading fw-bold mb-4">From scheduled session to completed summary</h2>
+            <p class="text-secondary">
+              The application keeps meeting state and generated artifacts aligned as a session moves
+              from a user request through recording and AI processing to a completed meeting.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="workflow-step">
+              <span class="step-number">1</span>
+              <h3 class="h5">Schedule meeting</h3>
+              <p class="mb-0">A user creates a notetaker session with the online meeting details and the time when the notetaker should join.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">2</span>
+              <h3 class="h5">Notetaker joins</h3>
+              <p class="mb-0">At the scheduled time, the notetaker joins the online meeting and the application tracks the session as in progress.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">3</span>
+              <h3 class="h5">Recording and AI processing</h3>
+              <p class="mb-0">The conversation is recorded, transcribed, and processed by an AI model to produce a concise meeting summary.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">4</span>
+              <h3 class="h5">Transcript and summary generated</h3>
+              <p class="mb-0">The completed meeting exposes its generated artifacts so users can review or download the transcript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">04 / Technologies and practices</p>
+        <h2 class="section-heading fw-bold mb-4">Clear APIs around a stateful AI workflow</h2>
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">.NET 8</h3>
+              <p class="mb-0">Backend services and REST APIs for meeting scheduling, retrieval, and artifact access.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">Entity Framework Core</h3>
+              <p class="mb-0">Data-access functionality for meeting, scheduling, lifecycle, and transcript-related data.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">REST APIs</h3>
+              <p class="mb-0">A consistent interface between the frontend, meeting-notetaker service, and backend systems.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">Business rules</h3>
+              <p class="mb-0">Validation and lifecycle rules help keep scheduled meetings and generated artifacts consistent.</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2" aria-label="Technology tags">
+          <span class="badge badge-tech">.NET 8</span>
+          <span class="badge badge-tech">Entity Framework Core</span>
+          <span class="badge badge-tech">REST APIs</span>
+          <span class="badge badge-tech">AI processing workflow</span>
+          <span class="badge badge-tech">Meeting lifecycle management</span>
+          <span class="badge badge-tech">Request validation</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <p class="section-eyebrow mb-2">05 / My role</p>
+            <h2 class="section-heading fw-bold mb-4">Building the API layer behind the experience</h2>
+            <p class="text-secondary">I worked on backend functionality that connected user actions, meeting automation, and AI-generated output.</p>
+            <ul class="text-secondary lh-lg">
+              <li>Developed .NET 8 REST APIs for scheduling and managing notetaker sessions.</li>
+              <li>Achieved 84% code coverage through unit tests implemented using xUnit and Coverlet.</li>
+              <li>Integrated Azure Service Bus to handle asynchronous messaging.</li>
+              <li>Implemented automatic meeting-join scheduling at a specified time.</li>
+              <li>Built APIs to retrieve meetings by scheduled, in-progress, and completed status.</li>
+              <li>Implemented transcript access and download functionality after completion.</li>
+              <li>Developed data access layer using Entity Framework Core and implemented repository pattern.</li>
+              <li>Applied request validation, error handling, and lifecycle business rules.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="content-card">
+              <p class="section-eyebrow mb-2">06 / Outcomes</p>
+              <h2 class="section-heading h3 fw-bold mb-4">A dependable path from meeting to insight</h2>
+              <p>The backend provided a consistent contract for scheduling, tracking, and consuming AI-generated meeting artifacts.</p>
+              <div class="row g-3 mt-2">
+                <div class="col-6"><strong class="d-block fs-4 text-primary">01</strong><span class="text-secondary">Automated meeting scheduling</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">02</strong><span class="text-secondary">Visible lifecycle states</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">03</strong><span class="text-secondary">Transcript access and download</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">04</strong><span class="text-secondary">Consistent service integration</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container text-center py-4">
+        <p class="section-eyebrow mb-2">07 / Reflection</p>
+        <h2 class="section-heading fw-bold mb-3">What I learned</h2>
+        <p class="lead text-secondary mx-auto" style="max-width: 760px;">
+          AI features are only as dependable as the workflow around them. This project strengthened
+          my experience designing APIs around asynchronous processing, explicit lifecycle states,
+          validation, persistence, and user access to generated results.
+        </p>
+        <a class="btn btn-brand mt-3" href="../index.html#projects">Back to projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>&copy; 2026 Tanmay Kulkarni. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
