@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study: Industrial Biotech Laboratory Digitization by Tanmay.">
+  <title>Industrial Biotech Laboratory Digitization | Tanmay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --brand: #3457d5;
+      --brand-dark: #233b96;
+      --soft: #f5f7fb;
+    }
+
+    body {
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .navbar-brand {
+      letter-spacing: .02em;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #172b70 0%, var(--brand) 58%, #4e7cf2 100%);
+      color: #fff;
+    }
+
+    .hero .eyebrow,
+    .section-eyebrow {
+      color: #b9c8ff;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+      letter-spacing: -.04em;
+    }
+
+    .hero-summary {
+      max-width: 760px;
+      color: #e1e8ff;
+      font-size: 1.15rem;
+    }
+
+    .hero-meta {
+      border-top: 1px solid rgba(255, 255, 255, .25);
+    }
+
+    .hero-meta strong {
+      display: block;
+      color: #fff;
+    }
+
+    .hero-meta span {
+      color: #c9d4ff;
+      font-size: .9rem;
+    }
+
+    .section-eyebrow {
+      color: var(--brand);
+    }
+
+    .section-heading {
+      letter-spacing: -.03em;
+    }
+
+    .soft-section {
+      background: var(--soft);
+    }
+
+    .content-card,
+    .info-card {
+      border: 1px solid #e7eaf1;
+      border-radius: 1rem;
+      background: #fff;
+      height: 100%;
+    }
+
+    .content-card {
+      padding: 1.5rem;
+    }
+
+    .info-card {
+      padding: 1.25rem;
+    }
+
+    .info-card h3 {
+      font-size: 1rem;
+      margin-bottom: .5rem;
+    }
+
+    .info-card p,
+    .content-card p,
+    .content-card li {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .badge-tech {
+      background: #e9edff;
+      color: var(--brand-dark);
+      font-weight: 600;
+      padding: .6rem .8rem;
+    }
+
+    .workflow-step {
+      position: relative;
+      padding-left: 3.5rem;
+    }
+
+    .workflow-step:not(:last-child) {
+      padding-bottom: 2rem;
+    }
+
+    .workflow-step:not(:last-child)::after {
+      background: #dbe2ff;
+      content: "";
+      height: calc(100% - 1.5rem);
+      left: .75rem;
+      position: absolute;
+      top: 1.5rem;
+      width: 2px;
+    }
+
+    .step-number {
+      align-items: center;
+      background: var(--brand);
+      border: 4px solid #e9edff;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      height: 1.5rem;
+      justify-content: center;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 1.5rem;
+      z-index: 1;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+
+    .btn-brand {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .btn-brand:hover {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">Tanmay Kulkarni</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#projectNav"
+        aria-controls="projectNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="projectNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero py-5">
+    <div class="container py-lg-5">
+      <p class="eyebrow mb-3">Project case study</p>
+      <h1 class="fw-bold mb-4">Industrial Biotech Laboratory Digitization</h1>
+      <p class="hero-summary mb-5">
+        A workflow modernization initiative that digitized manual experiment recording, reduced
+        operational friction, and made lab data easier to validate and reuse across research teams.
+      </p>
+      <div class="hero-meta row g-4 pt-4">
+        <div class="col-6 col-md-3"><strong>Industry</strong><span>Biotechnology / R&amp;D</span></div>
+        <div class="col-6 col-md-3"><strong>Project type</strong><span>Digital workflow transformation</span></div>
+        <div class="col-6 col-md-3"><strong>Focus</strong><span>Experiment data capture</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Senior engineer</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <p class="section-eyebrow mb-2">01 / Overview</p>
+            <h2 class="section-heading fw-bold mb-4">Replacing paperwork with a structured digital workflow</h2>
+            <p class="lead text-secondary">
+              The client managed multiple research labs where experimental observations, readings, and
+              outcomes were recorded using the classic combination of paper forms, spreadsheets, and
+              manual follow-up.
+            </p>
+            <p class="text-secondary mb-0">
+              This project introduced a central platform to digitize that process. Researchers could
+              enter observations, trace the lifecycle of each sample, and rely on predefined formulas
+              to calculate results automatically. The system was designed to support a wide range of
+              experiment types, from simple observations to more complex workflows with several
+              calculations and validation rules.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <div class="info-card">
+              <h3>Project goals</h3>
+              <ul class="mb-0 ps-3">
+                <li>Standardize experiment recording across labs.</li>
+                <li>Reduce repeated manual effort and calculation errors.</li>
+                <li>Support multiple experiment templates without code changes.</li>
+                <li>Improve review, approval, and rework visibility.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">02 / The challenge</p>
+        <h2 class="section-heading fw-bold mb-4">Manual lab work was slow, inconsistent, and hard to scale</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">High process variation</h3>
+              <p class="mb-0">Each experiment had different input requirements, formulas, and review stages, so a one-size-fits-all process was not feasible.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Data quality risk</h3>
+              <p class="mb-0">Manual calculations and handwritten entries created an opportunity for inconsistency, missing values, and rework during review.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Operational overhead</h3>
+              <p class="mb-0">Research teams spent a significant amount of time updating forms, checking results, and coordinating feedback across teams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-eyebrow mb-2">03 / Solution</p>
+            <h2 class="section-heading fw-bold mb-4">A configurable platform built for scientific workflows</h2>
+            <p class="text-secondary">
+              The platform combined structured input collection with flexible rule-based calculation logic.
+              Researchers were guided through experiment-specific forms, while the backend validated the
+              data and automatically calculated outcomes based on predefined formulas.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="workflow-step">
+              <span class="step-number">1</span>
+              <h3 class="h5">Experiment-specific form design</h3>
+              <p class="mb-0">The solution used dynamic templates so different studies could be configured without needing a fresh code release for each change.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">2</span>
+              <h3 class="h5">Observation capture</h3>
+              <p class="mb-0">Users entered readings and observations through a consistent interface designed to reduce data-entry errors and enforce completion checks.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">3</span>
+              <h3 class="h5">Automated calculation and validation</h3>
+              <p class="mb-0">Predefined formulas and validation rules calculated results in real time and flagged incomplete or inconsistent submissions.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">4</span>
+              <h3 class="h5">Review, rejection, and redo flow</h3>
+              <p class="mb-0">The system supported submit, reject, and resubmission cycles while maintaining reliable state transitions and safe rollback behavior.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">04 / Technologies and practices</p>
+        <h2 class="section-heading fw-bold mb-4">Built to balance flexibility with reliability</h2>
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Dynamic templates</h3><p class="mb-0">Configurable forms that adapted to experiment-specific requirements.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Calculation engine</h3><p class="mb-0">Automated outputs driven by predefined formulas and validation rules.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Workflow APIs</h3><p class="mb-0">Submission, review, rejection, and resubmission flows managed through backend services.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Operational control</h3><p class="mb-0">Audit-friendly state handling and transaction-aware rollback for safer processing.</p></div></div>
+        </div>
+        <div class="d-flex flex-wrap gap-2" aria-label="Technology tags">
+          <span class="badge badge-tech">ASP.NET Core</span>
+          <span class="badge badge-tech">REST APIs</span>
+          <span class="badge badge-tech">SQL Server</span>
+          <span class="badge badge-tech">Excel-based calculations</span>
+          <span class="badge badge-tech">Dynamic JSON forms</span>
+          <span class="badge badge-tech">Workflow validation</span>
+          <span class="badge badge-tech">Git</span>
+          <span class="badge badge-tech">System design</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <p class="section-eyebrow mb-2">05 / My role</p>
+            <h2 class="section-heading fw-bold mb-4">Leading delivery in a complex domain</h2>
+            <p class="text-secondary">I worked closely with the team to turn a manual research workflow into a configurable digital process.</p>
+            <ul class="text-secondary lh-lg">
+              <li>Led the implementation of experiment-specific JSON templates and associated data flows.</li>
+              <li>Designed and built the backend API logic for submit, rejection, and redo scenarios.</li>
+              <li>Handled transaction and file-system edge cases to ensure a safe and dependable user experience.</li>
+              <li>Collaborated with stakeholders to align process changes with real laboratory operations.</li>
+              <li>Helped keep delivery on track while balancing configuration flexibility with technical stability.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="content-card">
+              <p class="section-eyebrow mb-2">06 / Outcomes</p>
+              <h2 class="section-heading h3 fw-bold mb-4">A more dependable research process</h2>
+              <p>The project replaced fragmented, manual recording with a consistent digital workflow that was easier to operate and easier to review.</p>
+              <div class="row g-3 mt-2">
+                <div class="col-6"><strong class="d-block fs-4 text-primary">01</strong><span class="text-secondary">Faster sample recording</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">02</strong><span class="text-secondary">More consistent results</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">03</strong><span class="text-secondary">Reduced rework loops</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">04</strong><span class="text-secondary">Easier process scaling</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container text-center py-4">
+        <p class="section-eyebrow mb-2">07 / Reflection</p>
+        <h2 class="section-heading fw-bold mb-3">What I learned</h2>
+        <p class="lead text-secondary mx-auto" style="max-width: 760px;">
+          This project reinforced an important lesson: in domain-heavy systems, the best architecture is
+          not always the most complex one. Sometimes the strongest solution is the one that balances
+          configurability, operational reality, and reliability — especially when the process varies by
+          experiment and the business cannot afford long engineering cycles for every change.
+        </p>
+        <a class="btn btn-brand mt-3" href="../index.html#projects">Back to projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>&copy; 2026 Tanmay Kulkarni. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
