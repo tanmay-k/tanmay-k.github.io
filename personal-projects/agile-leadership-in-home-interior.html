@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study: applying Agile leadership principles to a multi-contractor home interior project.">
+  <title>Agile Leadership in a Home Interior Project | Tanmay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --brand: #3457d5;
+      --brand-dark: #233b96;
+      --soft: #f5f7fb;
+    }
+
+    body { color: var(--ink); }
+    .navbar-brand { letter-spacing: .02em; }
+    .hero {
+      background: linear-gradient(135deg, #172b70 0%, var(--brand) 58%, #4e7cf2 100%);
+      color: #fff;
+    }
+    .eyebrow, .section-eyebrow {
+      color: #b9c8ff;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+      letter-spacing: -.04em;
+    }
+    .hero-summary { max-width: 790px; color: #e1e8ff; font-size: 1.15rem; }
+    .hero-meta { border-top: 1px solid rgba(255, 255, 255, .25); }
+    .hero-meta strong { display: block; color: #fff; }
+    .hero-meta span { color: #c9d4ff; font-size: .9rem; }
+    .section-eyebrow { color: var(--brand); }
+    .section-heading { letter-spacing: -.03em; }
+    .soft-section { background: var(--soft); }
+    .content-card, .info-card {
+      border: 1px solid #e7eaf1;
+      border-radius: 1rem;
+      background: #fff;
+      height: 100%;
+    }
+    .content-card { padding: 1.5rem; }
+    .info-card { padding: 1.25rem; }
+    .info-card h3 { font-size: 1rem; margin-bottom: .5rem; }
+    .info-card p, .content-card p, .content-card li {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .badge-skill {
+      background: #e9edff;
+      color: var(--brand-dark);
+      font-weight: 600;
+      padding: .6rem .8rem;
+    }
+    .workflow-step { position: relative; padding-left: 3.5rem; }
+    .workflow-step:not(:last-child) { padding-bottom: 2rem; }
+    .workflow-step:not(:last-child)::after {
+      background: #dbe2ff;
+      content: "";
+      height: calc(100% - 1.5rem);
+      left: .75rem;
+      position: absolute;
+      top: 1.5rem;
+      width: 2px;
+    }
+    .step-number {
+      align-items: center;
+      background: var(--brand);
+      border: 4px solid #e9edff;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      height: 1.5rem;
+      justify-content: center;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 1.5rem;
+      z-index: 1;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+    .disclaimer {
+      border-left: 4px solid var(--brand);
+      background: #eef1ff;
+      color: #364152;
+    }
+    .btn-brand { background: var(--brand); color: #fff; }
+    .btn-brand:hover { background: var(--brand-dark); color: #fff; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">Tanmay Kulkarni</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#projectNav"
+        aria-controls="projectNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="projectNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#personal-projects">Personal Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero py-5">
+    <div class="container py-lg-5">
+      <p class="eyebrow mb-3">Personal project case study</p>
+      <h1 class="fw-bold mb-4">Agile leadership beyond software development</h1>
+      <p class="hero-summary mb-5">
+        How I planned and led a multi-contractor home interior project using incremental delivery,
+        dependency management, transparent communication, and continuous feedback.
+      </p>
+      <div class="hero-meta row g-4 pt-4">
+        <div class="col-6 col-md-3"><strong>Context</strong><span>Home interior delivery</span></div>
+        <div class="col-6 col-md-3"><strong>Team model</strong><span>Independent contractors</span></div>
+        <div class="col-6 col-md-3"><strong>Leadership focus</strong><span>Coordination and alignment</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Project owner and facilitator</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <p class="section-eyebrow mb-2">01 / The challenge</p>
+            <h2 class="section-heading fw-bold mb-4">Creating visibility and control without a single delivery team</h2>
+            <p class="lead text-secondary">
+              After taking possession of my home, I needed to coordinate furniture, electrical work,
+              lighting, painting, false ceiling, curtains, and related finishing work.
+            </p>
+            <p class="text-secondary mb-0">
+              The conventional interior-design model required handing over the keys for several
+              months, with most decisions made up front and limited visibility during execution.
+              I wanted a delivery approach that reduced rework, kept decisions close to the work,
+              and made trade-offs visible as conditions changed.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <div class="info-card">
+              <h3>Leadership objectives</h3>
+              <ul class="mb-0 ps-3">
+                <li>Keep ownership of priorities and quality.</li>
+                <li>Make work sequencing and dependencies explicit.</li>
+                <li>Reduce on-site work and avoid preventable rework.</li>
+                <li>Maintain a regular feedback loop with each contractor.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">02 / The leadership approach</p>
+        <h2 class="section-heading fw-bold mb-4">Turning a complex project into a coordinated flow of work</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Choosing the right operating model</h3>
+              <p class="mb-0">I compared a single interior designer with directly managed specialists, balancing decision-making control, coordination effort, quality risk, and the opportunity to avoid unnecessary upselling.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Making dependencies visible</h3>
+              <p class="mb-0">After speaking with each contractor, I sequenced the work and identified dependencies-for example, completing ceiling and electrical work before final furniture installation.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Creating a feedback rhythm</h3>
+              <p class="mb-0">I stayed engaged throughout execution, communicated expectations clearly, inspected progress, and gave regular feedback so issues could be addressed before they became expensive rework.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-eyebrow mb-2">03 / Execution flow</p>
+            <h2 class="section-heading fw-bold mb-4">Leading through sequencing, inspection, and adaptation</h2>
+            <p class="text-secondary">
+              Rather than treating the design as a fixed hand-off, I used a staged approach:
+              prepare the next activity, confirm the current result, and adjust based on what was
+              learned on site.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="workflow-step">
+              <span class="step-number">1</span>
+              <h3 class="h5">Define the outcome and constraints</h3>
+              <p class="mb-0">I clarified the desired work, materials, quality expectations, and the rule that furniture should be factory-built wherever possible and assembled on site.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">2</span>
+              <h3 class="h5">Select and align specialists</h3>
+              <p class="mb-0">I evaluated contractors for specific work, explained the delivery model, and aligned each person on their responsibilities and hand-offs.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">3</span>
+              <h3 class="h5">Sequence dependent work</h3>
+              <p class="mb-0">I planned the order of activities so one contractor’s output enabled the next contractor to start, reducing clashes and idle time.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">4</span>
+              <h3 class="h5">Inspect, communicate, and adapt</h3>
+              <p class="mb-0">I used progress checks and frequent conversations to surface technical challenges, make trade-offs, and keep the work moving toward the intended result.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">04 / Skills demonstrated</p>
+        <h2 class="section-heading fw-bold mb-4">Transferable Agile leadership capabilities</h2>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Prioritization</h3><p class="mb-0">Focused effort on the work that unlocked the next activity and protected the desired outcome.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Dependency management</h3><p class="mb-0">Mapped hand-offs across independent specialists and sequenced work to reduce blockers.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Stakeholder alignment</h3><p class="mb-0">Set clear expectations, explained constraints, and kept contributors aligned on quality and scope.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Risk management</h3><p class="mb-0">Anticipated visibility, rework, availability, and technical risks, then designed practical mitigations.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Continuous improvement</h3><p class="mb-0">Adjusted the plan as new information emerged instead of waiting for a final hand-over to discover problems.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Servant leadership</h3><p class="mb-0">Removed ambiguity and coordination friction so specialists could execute their work effectively.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Decision-making</h3><p class="mb-0">Made explicit trade-offs between control, convenience, cost, timing, and quality.</p></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="content-card"><h3 class="h6">Outcome ownership</h3><p class="mb-0">Stayed accountable for the integrated result even though delivery was distributed across contractors.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <p class="section-eyebrow mb-2">05 / Reflection</p>
+            <h2 class="section-heading fw-bold mb-4">What I learned about leading through uncertainty</h2>
+            <p class="text-secondary">
+              A flexible timeline can remove pressure, but it can also reduce urgency. I learned
+              to establish clearer expectations even when a deadline is not externally imposed.
+              I also learned that a distributed team creates real operational constraints: vehicle
+              availability, competing site commitments, and specialist capacity can all create
+              delays that no plan can remove completely.
+            </p>
+            <p class="text-secondary mb-0">
+              The practical response is not to seek perfect certainty. It is to make dependencies
+              visible, maintain a short feedback cycle, communicate early, and keep enough
+              flexibility to adapt without losing sight of the outcome.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="content-card">
+              <h3 class="h5">Key takeaway for Agile teams</h3>
+              <p class="mb-0">Leadership is transferable: the environment may change, but the ability to create clarity, align people, manage flow, learn quickly, and own outcomes remains valuable across domains.</p>
+            </div>
+          </div>
+        </div>
+        <p class="disclaimer rounded p-3 mt-5 mb-0">
+          <strong>Disclaimer:</strong> While this project was outside a software context, I applied Agile principles through verbal task prioritization, sequencing, and continuous feedback loops rather than formal documentation.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top py-4">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <span class="text-secondary">© 2026 Tanmay Kulkarni</span>
+      <a class="btn btn-sm btn-brand" href="../index.html#personal-projects">Back</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
