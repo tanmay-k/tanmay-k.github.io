@@ -184,14 +184,14 @@
       <p class="eyebrow mb-3">Project case study</p>
       <h1 class="fw-bold mb-4">Industrial Biotech Laboratory Digitization</h1>
       <p class="hero-summary mb-5">
-        A workflow modernization initiative that digitized manual experiment recording, reduced
-        operational friction, and made lab data easier to validate and reuse across research teams.
+        A development-stage laboratory workflow that digitized experiment recording and focused on
+        dependable observation capture, calculation, validation, and file handling.
       </p>
       <div class="hero-meta row g-4 pt-4">
         <div class="col-6 col-md-3"><strong>Industry</strong><span>Biotechnology / R&amp;D</span></div>
         <div class="col-6 col-md-3"><strong>Project type</strong><span>Digital workflow transformation</span></div>
-        <div class="col-6 col-md-3"><strong>Focus</strong><span>Experiment data capture</span></div>
-        <div class="col-6 col-md-3"><strong>My role</strong><span>Senior engineer</span></div>
+        <div class="col-6 col-md-3"><strong>Delivery context</strong><span>Development, 4–5 people</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Backend engineer, 2–3 months</span></div>
       </div>
     </div>
   </header>
@@ -214,6 +214,11 @@
               to calculate results automatically. The system was designed to support a wide range of
               experiment types, from simple observations to more complex workflows with several
               calculations and validation rules.
+            </p>
+            <p class="text-secondary mb-0">
+              The primary users were laboratory analysts performing experiments. My contribution was
+              focused on backend implementation and improvements to observation capture, calculation,
+              submit/reject/resubmit behavior, and file handling.
             </p>
           </div>
           <div class="col-lg-4">
@@ -325,25 +330,25 @@
           <div class="col-lg-6">
             <p class="section-eyebrow mb-2">05 / My role</p>
             <h2 class="section-heading fw-bold mb-4">Leading delivery in a complex domain</h2>
-            <p class="text-secondary">I worked closely with the team to turn a manual research workflow into a configurable digital process.</p>
+            <p class="text-secondary">I focused on backend implementation for a configurable laboratory workflow used by analysts during experiments.</p>
             <ul class="text-secondary lh-lg">
-              <li>Led the implementation of experiment-specific JSON templates and associated data flows.</li>
-              <li>Designed and built the backend API logic for submit, rejection, and redo scenarios.</li>
-              <li>Handled transaction and file-system edge cases to ensure a safe and dependable user experience.</li>
-              <li>Collaborated with stakeholders to align process changes with real laboratory operations.</li>
-              <li>Helped keep delivery on track while balancing configuration flexibility with technical stability.</li>
+              <li>Improved observation capture and backend behavior for submit, reject, and resubmit scenarios.</li>
+              <li>Investigated differences between the application’s calculation library and Microsoft Excel, including how quotes and brackets could change formula behavior.</li>
+              <li>Prevented file loss when a database transaction rolled back after a file operation.</li>
+              <li>Added disk-space checks before saving files and recovery from a safety copy when an operation failed.</li>
+              <li>Tested the file-handling and calculation edge cases locally to validate safer behavior in the development application.</li>
             </ul>
           </div>
           <div class="col-lg-6">
             <div class="content-card">
               <p class="section-eyebrow mb-2">06 / Outcomes</p>
               <h2 class="section-heading h3 fw-bold mb-4">A more dependable research process</h2>
-              <p>The project replaced fragmented, manual recording with a consistent digital workflow that was easier to operate and easier to review.</p>
+              <p>The application was still in development, so I am not claiming production adoption or business KPI improvements. The verified result was safer file handling and stronger coverage of calculation and workflow edge cases during local testing.</p>
               <div class="row g-3 mt-2">
-                <div class="col-6"><strong class="d-block fs-4 text-primary">01</strong><span class="text-secondary">Faster sample recording</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">02</strong><span class="text-secondary">More consistent results</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">03</strong><span class="text-secondary">Reduced rework loops</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">04</strong><span class="text-secondary">Easier process scaling</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">No loss</strong><span class="text-secondary">Files protected across database rollback scenarios</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">Pre-check</strong><span class="text-secondary">Disk capacity checked before file operations</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">Recovery</strong><span class="text-secondary">Safety copy used to recover from failed operations</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">Tested</strong><span class="text-secondary">Calculation and workflow edge cases validated locally</span></div>
               </div>
             </div>
           </div>
@@ -358,8 +363,14 @@
         <p class="lead text-secondary mx-auto" style="max-width: 760px;">
           This project reinforced an important lesson: in domain-heavy systems, the best architecture is
           not always the most complex one. Sometimes the strongest solution is the one that balances
-          configurability, operational reality, and reliability — especially when the process varies by
-          experiment and the business cannot afford long engineering cycles for every change.
+          configurability, operational reality, and reliability — especially when a system combines
+          scientific calculations with file operations and stateful workflows. I also learned that
+          compatibility with familiar tools such as Excel must be treated as a deliberate requirement,
+          not assumed from similar-looking formulas.
+        </p>
+        <p class="text-secondary mx-auto mb-0" style="max-width: 760px;">
+          Project details have been generalized to respect confidentiality obligations. The outcomes
+          shown are limited to development and local-testing results I can substantiate.
         </p>
         <a class="btn btn-brand mt-3" href="../index.html#projects">Back to projects</a>
       </div>

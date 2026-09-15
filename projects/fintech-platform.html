@@ -114,14 +114,14 @@
       <p class="eyebrow mb-3">Project case study</p>
       <h1 class="fw-bold mb-4">Digital Lending &amp; Invoice Financing Platform</h1>
       <p class="hero-summary mb-5">
-        A financial-services platform that helps small and medium-sized businesses access and
-        manage short-term financing through loans and eligible invoice-based funding.
+        A production financial-services platform supporting loan and invoice-financing workflows
+        for small and medium-sized businesses, from application through repayment and closure.
       </p>
       <div class="hero-meta row g-4 pt-4">
         <div class="col-6 col-md-3"><strong>Industry</strong><span>FinTech and lending</span></div>
         <div class="col-6 col-md-3"><strong>Project type</strong><span>Loan management platform</span></div>
-        <div class="col-6 col-md-3"><strong>Core stack</strong><span>Java, Spring Boot, Maven</span></div>
-        <div class="col-6 col-md-3"><strong>My role</strong><span>Software engineer</span></div>
+        <div class="col-6 col-md-3"><strong>Delivery context</strong><span>Production, 7–8 people</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Backend engineer, 5–6 months</span></div>
       </div>
     </div>
   </header>
@@ -142,6 +142,13 @@
               captured, validated, and used as the basis for obtaining short-term funding. Internal
               teams can review applications, monitor active loans, manage exceptions, and keep
               customers informed throughout the process.
+            </p>
+            <p class="text-secondary mb-0">
+              The shared backend served customer-facing services used by small business owners and
+              internal teams including Sales and Credit. My contribution focused on backend
+              implementation and production reliability rather than owning business prioritization
+              or customer metrics.
+            </p>
           </div>
           <div class="col-lg-4">
             <div class="info-card">
@@ -271,25 +278,24 @@
           <div class="col-lg-6">
             <p class="section-eyebrow mb-2">05 / My role</p>
             <h2 class="section-heading fw-bold mb-4">Improving the platform from codebase to runtime</h2>
-            <p class="text-secondary">I worked on the development, maintenance, modernization, and operational reliability of application components supporting the lending lifecycle.</p>
+            <p class="text-secondary">I worked on backend implementation, codebase modernization, and operational reliability for application components supporting the lending lifecycle.</p>
             <ul class="text-secondary lh-lg">
-              <li>Consolidated 11 fragmented repositories into 5 to simplify the distributed monolith.</li>
-              <li>Unblocked the critical migration from Java 8 to Java 21 by reducing dependency complexity.</li>
-              <li>Optimized batch processing and reduced execution time by 40%.</li>
-              <li>Implemented asynchronous logging to reduce the impact of logging on application work.</li>
-              <li>Implemented audit logs for critical operations and improved traceability.</li>
+              <li>Mapped module dependencies and consolidated 11 fragmented repositories into 5, reducing the need to create and manually coordinate branches across every repository for each development task.</li>
+              <li>Reduced dependency and version-management complexity that was making Java and Spring Boot upgrades increasingly difficult and increasing exposure to security risk.</li>
+              <li>Optimized a daily scheduled job that previously took more than an hour and sometimes failed by skipping execution steps when no relevant data had changed.</li>
+              <li>Implemented audit history for important tables by storing the previous and updated records as JSON together with the identity of the person who made the change.</li>
             </ul>
           </div>
           <div class="col-lg-6">
             <div class="content-card">
               <p class="section-eyebrow mb-2">06 / Outcomes</p>
               <h2 class="section-heading h3 fw-bold mb-4">A more reliable platform for lending teams</h2>
-              <p>The work reduced structural complexity, improved batch performance, and strengthened the operational visibility needed for a financial platform.</p>
+              <p>The work reduced structural complexity, improved the reliability of a daily production job, and made important data changes easier to trace. These are verified engineering and operational outcomes; business KPIs are not included because they were outside my role and access.</p>
               <div class="row g-3 mt-2">
                 <div class="col-6"><strong class="d-block fs-4 text-primary">11 → 5</strong><span class="text-secondary">Repositories consolidated</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">40%</strong><span class="text-secondary">Batch execution time reduced</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">Java 21</strong><span class="text-secondary">Migration unblocked</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">Audit-ready</strong><span class="text-secondary">Critical operations tracked</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">40%</strong><span class="text-secondary">Daily job execution time reduced</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">1 hour+</strong><span class="text-secondary">Previous job duration, with intermittent failures</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">JSON history</strong><span class="text-secondary">Previous and updated values retained with actor identity</span></div>
               </div>
             </div>
           </div>
@@ -304,7 +310,11 @@
         <p class="lead text-secondary mx-auto" style="max-width: 760px;">
           Financial platforms require both domain accuracy and engineering discipline. This project
           strengthened my experience with lifecycle-driven workflows, legacy modernization,
-          performance optimization, and the observability needed to operate critical systems.
+          performance optimization, dependency mapping, and traceability for production systems.
+        </p>
+        <p class="text-secondary mx-auto mb-0" style="max-width: 760px;">
+          Project details have been generalized to respect confidentiality obligations. The outcomes
+          shown are limited to results I can substantiate from my work.
         </p>
         <a class="btn btn-brand mt-3" href="../index.html#projects">Back to projects</a>
       </div>

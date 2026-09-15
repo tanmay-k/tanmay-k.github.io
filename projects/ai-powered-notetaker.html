@@ -184,14 +184,14 @@
       <p class="eyebrow mb-3">Project case study</p>
       <h1 class="fw-bold mb-4">AI Meeting Notetaker &amp; Talent Performance Platform</h1>
       <p class="hero-summary mb-5">
-        An AI-enabled collaboration platform for small and medium-sized teams that turns scheduled
-        online meetings into searchable transcripts and concise, useful summaries.
+        A pilot collaboration platform that exposed meeting-notetaker capabilities through REST APIs,
+        with an administration panel, tenant hierarchy, and an asynchronous meeting lifecycle.
       </p>
       <div class="hero-meta row g-4 pt-4">
         <div class="col-6 col-md-3"><strong>Industry</strong><span>AI and talent management</span></div>
         <div class="col-6 col-md-3"><strong>Project type</strong><span>Collaboration platform</span></div>
-        <div class="col-6 col-md-3"><strong>Core stack</strong><span>.NET 8, EF Core, REST APIs</span></div>
-        <div class="col-6 col-md-3"><strong>My role</strong><span>Backend developer</span></div>
+        <div class="col-6 col-md-3"><strong>Delivery context</strong><span>MVP, 8–12 people</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Backend API owner, 4 months</span></div>
       </div>
     </div>
   </header>
@@ -212,6 +212,12 @@
               generates a transcript, and uses an AI model to produce a concise summary. The backend
               coordinates scheduling, meeting state, generated artifacts, and access to completed
               meeting content.
+            </p>
+            <p class="text-secondary mb-0">
+              The MVP supported one meeting platform. An administration panel served administrators,
+              while resellers and tenants used the backend through API-only access secured by API
+              keys. I clarified backend requirements and worked with bot development, frontend, QA,
+              and DevOps teams.
           </div>
           <div class="col-lg-4">
             <div class="info-card">
@@ -350,34 +356,30 @@
           <div class="col-lg-6">
             <p class="section-eyebrow mb-2">05 / My role</p>
             <h2 class="section-heading fw-bold mb-4">Building the API layer behind the experience</h2>
-            <p class="text-secondary">I worked on backend functionality that connected user actions, meeting automation,
-              and AI-generated output.</p>
+            <p class="text-secondary">I owned backend API implementation and requirements clarification for the MVP, while collaborating with the bot, frontend, QA, and DevOps teams.</p>
             <ul class="text-secondary lh-lg">
-              <li>Developed .NET 8 REST APIs for scheduling and managing notetaker sessions.</li>
-              <li>Achieved 84% code coverage through unit tests implemented using xUnit and Coverlet.</li>
-              <li>Integrated Azure Service Bus to handle asynchronous messaging.</li>
-              <li>Implemented automatic meeting-join scheduling at a specified time.</li>
-              <li>Built APIs to retrieve meetings by scheduled, in-progress, and completed status.</li>
-              <li>Implemented transcript access and download functionality after completion.</li>
-              <li>Developed data access layer using Entity Framework Core and implemented repository pattern.</li>
-              <li>Applied request validation, error handling, and lifecycle business rules.</li>
+              <li>Designed the Admin, Reseller, and Tenant hierarchy and implemented API-key authentication for API-only reseller and tenant access.</li>
+              <li>Developed .NET 8 REST APIs for scheduling, retrieving, and managing notetaker sessions through lifecycle states.</li>
+              <li>Implemented and deployed an Azure Function integrated with Service Bus for part of the asynchronous meeting lifecycle.</li>
+              <li>Integrated Azure services including Key Vault and Azure Blob Storage, and enhanced downloads using signed URLs.</li>
+              <li>Achieved 84% unit-test coverage using xUnit and Coverlet.</li>
+              <li>Clarified requirements for the administration panel and REST-only capabilities with the cross-functional team.</li>
             </ul>
           </div>
           <div class="col-lg-6">
             <div class="content-card">
               <p class="section-eyebrow mb-2">06 / Outcomes</p>
               <h2 class="section-heading h3 fw-bold mb-4">A dependable path from meeting to insight</h2>
-              <p>The backend provided a consistent contract for scheduling, tracking, and consuming AI-generated meeting
-                artifacts.</p>
+              <p>The backend provided a consistent contract for scheduling, tracking, and consuming meeting artifacts. The MVP’s business adoption, AI-summary quality, and concurrency test results were outside my role and are not claimed here.</p>
               <div class="row g-3 mt-2">
-                <div class="col-6"><strong class="d-block fs-4 text-primary">01</strong><span
-                    class="text-secondary">Automated meeting scheduling</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">02</strong><span
-                    class="text-secondary">Visible lifecycle states</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">03</strong><span
-                    class="text-secondary">Transcript access and download</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">04</strong><span
-                    class="text-secondary">Consistent service integration</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">84%</strong><span
+                    class="text-secondary">Unit-test coverage reported by Coverlet</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">3 levels</strong><span
+                    class="text-secondary">Admin, Reseller, and Tenant hierarchy</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">API-only</strong><span
+                    class="text-secondary">Secured access for resellers and tenants</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">Signed URLs</strong><span
+                    class="text-secondary">Faster direct downloads from Azure Blob Storage</span></div>
               </div>
             </div>
           </div>
@@ -394,9 +396,14 @@
           reliability, scalability, and usability. One challenge was coordinating asynchronous meeting events.
           Integrating Azure Service Bus helped me appreciate how message queues can simplify complex workflows.
           Achieving 84% unit test coverage reinforced the value of test-driven development, especially when handling
-          lifecycle rules and error cases. I also learned how critical it is to design clean data access layers with
-          Entity Framework Core to ensure maintainability. Going forward, I want to explore advanced monitoring and
-          logging strategies to make backend services more transparent and resilient in production environments.
+          lifecycle rules and error cases. I also learned how critical it is to clarify ownership and
+          access boundaries early when one backend serves an administration panel and API-only
+          consumers. The project also gave me practical experience with Azure services despite
+          starting without prior Azure experience.
+        </p>
+        <p class="text-secondary mx-auto mb-0" style="max-width: 760px;">
+          Project details have been generalized to respect confidentiality obligations. The outcomes
+          shown are limited to results I can substantiate from this MVP work.
         </p>
         <a class="btn btn-brand mt-3" href="../index.html#projects">Back to projects</a>
       </div>
