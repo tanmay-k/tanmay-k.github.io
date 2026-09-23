@@ -1,0 +1,41 @@
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --brand: #3457d5;
+  --brand-dark: #233b96;
+  --soft: #f5f7fb;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: #fff; font-family: Arial, sans-serif; }
+a { color: var(--brand); }
+.site-header { background: #212529; }
+.nav-inner { max-width: 1140px; margin: auto; padding: .75rem 1rem; display: flex; gap: 1.5rem; align-items: center; justify-content: space-between; }
+.brand { color: #fff; text-decoration: none; font-weight: 700; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.nav-links a { color: #fff; text-decoration: none; font-size: .9rem; }
+.container { max-width: 1140px; margin: auto; padding: 0 1rem; }
+.hero { background: linear-gradient(135deg, #172b70 0%, var(--brand) 58%, #4e7cf2 100%); color: #fff; padding: 5rem 0; }
+.hero h1 { max-width: 900px; font-size: clamp(2.3rem, 5vw, 4.5rem); letter-spacing: -.04em; margin: 0 0 1.5rem; }
+.hero-summary { max-width: 790px; color: #e1e8ff; font-size: 1.15rem; line-height: 1.6; }
+.section { padding: 4rem 0; }
+.section:nth-child(even) { background: var(--soft); }
+.section h2 { margin-top: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+.card { border: 1px solid #e7eaf1; border-radius: 1rem; padding: 1.5rem; background: #fff; height: 100%; }
+.muted { color: var(--muted); }
+.project-list { border-top: 1px solid #dee2e6; }
+.project-item { display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; padding: 1.5rem 0; border-bottom: 1px solid #dee2e6; }
+.project-index { color: var(--muted); font-weight: 700; }
+.badge { display: inline-block; padding: .35rem .55rem; margin: .2rem .2rem 0 0; background: #e9edff; color: var(--brand-dark); border-radius: .35rem; font-size: .85rem; }
+.case-content { line-height: 1.75; }
+.case-content h2 { margin-top: 3rem; }
+.case-content h3 { margin-top: 2rem; }
+.case-content li { margin-bottom: .5rem; }
+.site-footer { background: #212529; color: #fff; text-align: center; padding: 1rem; }
+@media (max-width: 700px) {
+  .nav-inner, .nav-links { align-items: flex-start; flex-direction: column; gap: .6rem; }
+  .project-item { grid-template-columns: 2rem 1fr; }
+  .project-item a { grid-column: 2; }
+}
