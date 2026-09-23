@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getProject, projectSlugs } from "../../../lib/projects";
+import { getLegacyContent } from "../../../lib/legacy-content";
 
 export const dynamicParams = false;
+
+const projectFiles = {
+  "ai-powered-notetaker": "ai-powered-notetaker.html",
+  "agent-onboarding": "agent-onboarding.html",
+  "biotech-lab-digitization": "biotech-lab-digitization.html",
+  "fintech-platform": "fintech-platform.html",
+  "agile-leadership-in-home-interior": "agile-leadership-in-home-interior.html",
+} as const;
+
+const projectSlugs = Object.keys(projectFiles);
 
 export function generateStaticParams() {
   return projectSlugs.map((slug) => ({ slug }));
@@ -12,13 +22,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   if (!projectSlugs.includes(slug)) return {};
-  const project = await getProject(slug);
-  return { title: `${project.title} | Tanmay`, description: project.description };
+  return { title: "Tanmay Kulkarni | Project case study" };
 }
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   if (!projectSlugs.includes(slug)) notFound();
-  const project = await getProject(slug);
-  return <main><header className="hero"><div className="container"><p>{project.category}</p><h1>{project.title}</h1><p className="hero-summary">{project.description}</p></div></header><article className="container section case-content">{project.content}<p><Link href="/#projects">← Back to projects</Link></p></article></main>;
+  const fileName = projectFiles[slug as keyof typeof projectFiles];
+  return <main><div dangerouslySetInnerHTML={{ __html: getLegacyContent(fileName) }} /><p className="container"><Link href="/#projects">← Back to projects</Link></p></main>;
 }

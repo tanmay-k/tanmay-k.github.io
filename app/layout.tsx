@@ -11,6 +11,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
         <header className="site-header">
           <nav className="nav-inner" aria-label="Primary navigation">
             <Link className="brand" href="/">Tanmay Kulkarni</Link>
