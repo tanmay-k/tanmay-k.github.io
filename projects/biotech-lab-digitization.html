@@ -329,14 +329,15 @@
         <div class="row g-5">
           <div class="col-lg-6">
             <p class="section-eyebrow mb-2">05 / My role</p>
-            <h2 class="section-heading fw-bold mb-4">Leading delivery in a complex domain</h2>
-            <p class="text-secondary">I focused on backend implementation for a configurable laboratory workflow used by analysts during experiments.</p>
+            <h2 class="section-heading fw-bold mb-4">Owning reliability risks in a configurable workflow</h2>
+            <p class="text-secondary">As a backend engineer in a 4–5-person team, I focused on making a development-stage laboratory workflow safer for on-premises deployment and more predictable for analysts performing experiments.</p>
             <ul class="text-secondary lh-lg">
-              <li>Improved observation capture and backend behavior for submit, reject, and resubmit scenarios.</li>
-              <li>Investigated differences between the application’s calculation library and Microsoft Excel, including how quotes and brackets could change formula behavior.</li>
-              <li>Prevented file loss when a database transaction rolled back after a file operation.</li>
-              <li>Added disk-space checks before saving files and recovery from a safety copy when an operation failed.</li>
-              <li>Tested the file-handling and calculation edge cases locally to validate safer behavior in the development application.</li>
+              <li><strong>Anticipated an operational risk:</strong> Recognized that on-premises deployments could share a server with other applications, making disk exhaustion a realistic cause of file-operation failures.</li>
+              <li><strong>Designed a failure-safe file workflow:</strong> Added disk-capacity checks before saving, created a recovery copy before changes, and restored the copy when an operation failed.</li>
+              <li><strong>Protected data integrity:</strong> Prevented file loss when a database transaction rolled back after a file operation, reducing the risk of inconsistent database and file-system state.</li>
+              <li><strong>Investigated calculation defects:</strong> Debugged formulas that behaved differently from Microsoft Excel and identified sensitivity to seemingly harmless quotes and brackets.</li>
+              <li><strong>Shared and validated findings:</strong> Documented the calculation behavior, explained the implication to my manager, informed correction of affected formulas, and tested file-handling and calculation edge cases locally.</li>
+              <li><strong>Strengthened workflow behavior:</strong> Improved observation capture and submit, reject, and resubmit handling for the analyst workflow.</li>
             </ul>
           </div>
           <div class="col-lg-6">

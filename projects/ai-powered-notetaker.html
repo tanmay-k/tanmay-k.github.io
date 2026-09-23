@@ -191,7 +191,7 @@
         <div class="col-6 col-md-3"><strong>Industry</strong><span>AI and talent management</span></div>
         <div class="col-6 col-md-3"><strong>Project type</strong><span>Collaboration platform</span></div>
         <div class="col-6 col-md-3"><strong>Delivery context</strong><span>MVP, 8–12 people</span></div>
-        <div class="col-6 col-md-3"><strong>My role</strong><span>Backend API owner, 4 months</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Backend API owner and technical requirements partner</span></div>
       </div>
     </div>
   </header>
@@ -216,8 +216,8 @@
             <p class="text-secondary mb-0">
               The MVP supported one meeting platform. An administration panel served administrators,
               while resellers and tenants used the backend through API-only access secured by API
-              keys. I clarified backend requirements and worked with bot development, frontend, QA,
-              and DevOps teams.
+              keys. I clarified backend requirements, shaped the API contract, and worked with bot
+              development, frontend, QA, and DevOps teams.
           </div>
           <div class="col-lg-4">
             <div class="info-card">
@@ -356,30 +356,38 @@
           <div class="col-lg-6">
             <p class="section-eyebrow mb-2">05 / My role</p>
             <h2 class="section-heading fw-bold mb-4">Building the API layer behind the experience</h2>
-            <p class="text-secondary">I owned backend API implementation and requirements clarification for the MVP, while collaborating with the bot, frontend, QA, and DevOps teams.</p>
+            <p class="text-secondary">I owned backend API implementation and requirements clarification for the MVP, translating ambiguous workflow needs into a stable integration contract for the bot, frontend, QA, DevOps, and future third-party consumers.</p>
             <ul class="text-secondary lh-lg">
               <li>Designed the Admin, Reseller, and Tenant hierarchy and implemented API-key authentication for API-only reseller and tenant access.</li>
-              <li>Developed .NET 8 REST APIs for scheduling, retrieving, and managing notetaker sessions through lifecycle states.</li>
+              <li>Designed and implemented approximately 20–22 .NET 8 REST APIs for scheduling, retrieving, and managing notetaker sessions through lifecycle states.</li>
               <li>Implemented and deployed an Azure Function integrated with Service Bus for part of the asynchronous meeting lifecycle.</li>
-              <li>Integrated Azure services including Key Vault and Azure Blob Storage, and enhanced downloads using signed URLs.</li>
-              <li>Achieved 84% unit-test coverage using xUnit and Coverlet.</li>
-              <li>Clarified requirements for the administration panel and REST-only capabilities with the cross-functional team.</li>
+              <li>Integrated Azure Key Vault and Blob Storage, using signed URLs to provide secure direct access to generated meeting artifacts.</li>
+              <li>Evaluated .NET unit-testing libraries and demonstrated that xUnit with Coverlet could meet the client’s minimum 70% coverage target; the approach achieved 84% coverage and was adopted by the frontend team.</li>
+              <li>Worked with the bot development team to improve the notetaker’s ability to join the correct meeting, increasing the success rate to more than 90%.</li>
+              <li>Created a portable shell script with AI assistance for scaling and performance test setup, reducing manual QA effort and increasing QA productivity by 50%.</li>
+              <li>Partnered with QA on user-manual documentation by explaining system and API behavior and reviewing content for technical accuracy.</li>
             </ul>
           </div>
           <div class="col-lg-6">
             <div class="content-card">
               <p class="section-eyebrow mb-2">06 / Outcomes</p>
               <h2 class="section-heading h3 fw-bold mb-4">A dependable path from meeting to insight</h2>
-              <p>The backend provided a consistent contract for scheduling, tracking, and consuming meeting artifacts. The MVP’s business adoption, AI-summary quality, and concurrency test results were outside my role and are not claimed here.</p>
+              <p>The work established a testable, secure backend contract for a cross-functional MVP. The outcomes below focus on delivery quality, integration readiness, workflow reliability, and practices I directly influenced; confidential usage volumes and business adoption are not claimed.</p>
               <div class="row g-3 mt-2">
                 <div class="col-6"><strong class="d-block fs-4 text-primary">84%</strong><span
                     class="text-secondary">Unit-test coverage reported by Coverlet</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">20–22</strong><span
+                    class="text-secondary">REST APIs implemented for the MVP</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">90%+</strong><span
+                    class="text-secondary">Correct-meeting join success rate</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">50%</strong><span
+                    class="text-secondary">QA productivity improvement from test automation</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">70%+</strong><span
+                    class="text-secondary">Client coverage target established and exceeded</span></div>
                 <div class="col-6"><strong class="d-block fs-4 text-primary">3 levels</strong><span
                     class="text-secondary">Admin, Reseller, and Tenant hierarchy</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">API-only</strong><span
-                    class="text-secondary">Secured access for resellers and tenants</span></div>
-                <div class="col-6"><strong class="d-block fs-4 text-primary">Signed URLs</strong><span
-                    class="text-secondary">Faster direct downloads from Azure Blob Storage</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">2 environments</strong><span
+                    class="text-secondary">MVP deployed to development and testing</span></div>
               </div>
             </div>
           </div>
@@ -392,14 +400,13 @@
         <p class="section-eyebrow mb-2">07 / Reflection</p>
         <h2 class="section-heading fw-bold mb-3">What I learned</h2>
         <p class="lead text-secondary mx-auto" style="max-width: 760px;">
-          Working on the backend of the AI-Powered Notetaker taught me the importance of designing APIs that balance
-          reliability, scalability, and usability. One challenge was coordinating asynchronous meeting events.
-          Integrating Azure Service Bus helped me appreciate how message queues can simplify complex workflows.
-          Achieving 84% unit test coverage reinforced the value of test-driven development, especially when handling
-          lifecycle rules and error cases. I also learned how critical it is to clarify ownership and
-          access boundaries early when one backend serves an administration panel and API-only
-          consumers. The project also gave me practical experience with Azure services despite
-          starting without prior Azure experience.
+          Working on the backend of the AI-Powered Notetaker strengthened my ability to turn ambiguous product needs
+          into clear API contracts, ownership boundaries, and delivery practices that multiple teams could use.
+          Coordinating asynchronous meeting events and working with the bot team showed me how technical alignment can
+          improve reliability, while the xUnit and Coverlet evaluation created a quality standard adopted beyond my
+          immediate backend work. Automating repeatable QA setup also reinforced that technical leadership includes
+          removing friction for partner teams, not only implementing features. The project gave me practical Azure
+          experience while requiring me to learn and apply unfamiliar services quickly.
         </p>
         <p class="text-secondary mx-auto mb-0" style="max-width: 760px;">
           Project details have been generalized to respect confidentiality obligations. The outcomes
