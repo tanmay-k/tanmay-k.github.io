@@ -54,6 +54,8 @@ a { color: var(--brand); }
 .case-study .step-number { align-items: center; background: var(--brand); border: 4px solid #e9edff; border-radius: 50%; color: #fff; display: flex; height: 1.5rem; justify-content: center; left: 0; position: absolute; top: 0; width: 1.5rem; z-index: 1; font-size: .75rem; font-weight: 700; }
 .case-study .badge-tech,
 .case-study .badge-skill { background: #e9edff; color: var(--brand-dark); font-weight: 600; padding: .6rem .8rem; display: inline-block; border-radius: .35rem; margin: .2rem; }
+.case-study .btn-brand { background: var(--brand); border: 1px solid var(--brand); border-radius: .375rem; color: #fff; display: inline-block; padding: .5rem 1rem; text-decoration: none; }
+.case-study .btn-brand:hover { background: var(--brand-dark); border-color: var(--brand-dark); color: #fff; }
 .case-study .disclaimer { border-left: 4px solid var(--brand); background: #eef1ff; color: #364152; padding: 1rem; }
 .case-study p, .case-study li { line-height: 1.75; }
 @media (max-width: 700px) {
