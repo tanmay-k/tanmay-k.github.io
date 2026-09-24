@@ -10,9 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-env:
-  NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
-
 concurrency:
   group: pages
   cancel-in-progress: true
