@@ -1,5 +1,9 @@
 import type { MDXComponents } from "mdx/types";
+import { ContentSection } from "./components/ContentSection";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
-  return components;
+  return {
+    section: ContentSection,
+    ...components,
+  };
 }

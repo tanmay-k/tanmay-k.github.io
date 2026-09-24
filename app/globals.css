@@ -34,6 +34,28 @@ a { color: var(--brand); }
 .case-content h3 { margin-top: 2rem; }
 .case-content li { margin-bottom: .5rem; }
 .site-footer { background: #212529; color: #fff; text-align: center; padding: 1rem; }
+.content-section { padding: 3rem 0; }
+.content-section.soft-section { background: var(--soft); }
+.case-study { color: var(--ink); }
+.case-study .hero { padding: 3rem 0; }
+.case-study .hero .container { padding-top: 2rem; padding-bottom: 2rem; }
+.case-study .eyebrow,
+.case-study .section-eyebrow { color: var(--brand); font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.case-study .hero .eyebrow { color: #b9c8ff; }
+.case-study .hero-meta { border-top: 1px solid rgba(255,255,255,.25); padding-top: 1rem; display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.case-study .hero-meta strong { display: block; color: #fff; }
+.case-study .hero-meta span { color: #c9d4ff; font-size: .9rem; }
+.case-study .content-card,
+.case-study .info-card { border: 1px solid #e7eaf1; border-radius: 1rem; background: #fff; height: 100%; padding: 1.25rem; }
+.case-study .content-card p,
+.case-study .info-card p,
+.case-study .content-card li { color: var(--muted); line-height: 1.75; }
+.case-study .workflow-step { position: relative; padding-left: 3.5rem; padding-bottom: 2rem; }
+.case-study .step-number { align-items: center; background: var(--brand); border: 4px solid #e9edff; border-radius: 50%; color: #fff; display: flex; height: 1.5rem; justify-content: center; left: 0; position: absolute; top: 0; width: 1.5rem; z-index: 1; font-size: .75rem; font-weight: 700; }
+.case-study .badge-tech,
+.case-study .badge-skill { background: #e9edff; color: var(--brand-dark); font-weight: 600; padding: .6rem .8rem; display: inline-block; border-radius: .35rem; margin: .2rem; }
+.case-study .disclaimer { border-left: 4px solid var(--brand); background: #eef1ff; color: #364152; padding: 1rem; }
+.case-study p, .case-study li { line-height: 1.75; }
 @media (max-width: 700px) {
   .nav-inner, .nav-links { align-items: flex-start; flex-direction: column; gap: .6rem; }
   .project-item { grid-template-columns: 2rem 1fr; }
