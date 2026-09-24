@@ -73,7 +73,7 @@ title: "Tanmay's Portfolio"
   </section>
 
   
-  <section id="experience" className="py-5 bg-light">
+  <section id="experience" className="py-5">
     <div className="container">
       <h2 className="mb-2">Experience</h2>
       <p className="text-muted mb-4">Progression from software engineering foundations to technical ownership and team enablement.</p>
@@ -101,76 +101,11 @@ title: "Tanmay's Portfolio"
   </section>
 
   
-  <section id="projects" className="py-5 bg-light">
+  <section id="projects" className="py-5 bg-light projects-section">
     <div className="container">
       <h2 className="mb-2">Professional Projects</h2>
       <p className="text-muted mb-4">Selected work focused on scalable platforms, workflow automation, and financial services.</p>
-      <div className="project-list">
-        <article className="project-item row g-3 align-items-start">
-          <div className="col-auto project-index">01</div>
-          <div className="col">
-            <h3 className="project-title h4 mb-2">Third-Party Agent Onboarding Platform</h3>
-            <p className="project-meta mb-2">Financial services &middot; Backend platform</p>
-            <p className="mb-3">A digital onboarding experience that helps a financial services provider bring new third-party agents into its network with greater speed, visibility, and consistency.</p>
-            <div aria-label="Technologies used">
-              <span className="badge text-bg-secondary me-1">.NET</span>
-              <span className="badge text-bg-secondary me-1">REST APIs</span>
-              <span className="badge text-bg-secondary">SQL Server</span>
-            </div>
-          </div>
-          <div className="col-12 col-md-auto">
-            <a href="/projects/agent-onboarding/" className="project-link">View project <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-        <article className="project-item row g-3 align-items-start">
-          <div className="col-auto project-index">02</div>
-          <div className="col">
-            <h3 className="project-title h4 mb-2">AI-Powered Note-Taker</h3>
-            <p className="project-meta mb-2">AI &middot; Productivity tool</p>
-            <p className="mb-3">A smart note-taking application that uses AI to summarize and organize your notes.</p>
-            <div aria-label="Technologies used">
-              <span className="badge text-bg-secondary me-1">.NET 8</span>
-              <span className="badge text-bg-secondary me-1">EF Core</span>
-              <span className="badge text-bg-secondary">REST APIs</span>
-            </div>
-          </div>
-          <div className="col-12 col-md-auto">
-            <a href="/projects/ai-powered-notetaker/" className="project-link">View project <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-        <article className="project-item row g-3 align-items-start">
-          <div className="col-auto project-index">03</div>
-          <div className="col">
-            <h3 className="project-title h4 mb-2">Biotech Lab Digitization</h3>
-            <p className="project-meta mb-2">Biotechnology &middot; Workflow modernization</p>
-            <p className="mb-3">A workflow modernization initiative that digitized manual experiment recording, reduced operational friction, and made lab data easier to validate and reuse across research teams.</p>
-            <div aria-label="Technologies used">
-              <span className="badge text-bg-secondary me-1">ASP.NET Core</span>
-              <span className="badge text-bg-secondary me-1">REST APIs</span>
-              <span className="badge text-bg-secondary">SQL Server</span>
-            </div>
-          </div>
-          <div className="col-12 col-md-auto">
-            <a href="/projects/biotech-lab-digitization/" className="project-link">View project <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-        <article className="project-item row g-3 align-items-start">
-          <div className="col-auto project-index">04</div>
-          <div className="col">
-            <h3 className="project-title h4 mb-2">Fintech Lending &amp; Invoice Financing Platform</h3>
-            <p className="project-meta mb-2">FinTech &middot; Lending workflows</p>
-            <p className="mb-3">A platform that provides seamless lending and invoice financing solutions for businesses.</p>
-            <div aria-label="Technologies used">
-              <span className="badge text-bg-secondary me-1">C#</span>
-              <span className="badge text-bg-secondary me-1">.NET</span>
-              <span className="badge text-bg-secondary">MySQL</span>
-            </div>
-          </div>
-          <div className="col-12 col-md-auto">
-            <a href="/projects/fintech-platform/" className="project-link">View project <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-      </div>
+      <ProjectList group="professional" />
     </div>
   </section>
 
@@ -179,19 +114,7 @@ title: "Tanmay's Portfolio"
     <div className="container">
       <h2 className="mb-2">Personal Projects</h2>
       <p className="text-muted mb-4">Independent projects that show experimentation, product thinking, and continued learning.</p>
-      <div className="project-list">
-        <article className="project-item row g-3 align-items-start">
-          <div className="col-auto project-index">01</div>
-          <div className="col">
-            <h3 className="project-title h4 mb-2">Agile Leadership in a Home Interior Project</h3>
-            <p className="project-meta mb-2">Independent case study &middot; Delivery leadership</p>
-            <p className="mb-0">A case study on coordinating independent contractors through prioritization, sequencing, stakeholder alignment, and continuous feedback.</p>
-          </div>
-          <div className="col-12 col-md-auto">
-            <a href="/projects/agile-leadership-in-home-interior/" className="project-link">Read case study <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-      </div>
+      <ProjectList group="personal" />
     </div>
   </section>
 
