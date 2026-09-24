@@ -1,128 +1,14 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Case study: applying Agile leadership principles to a multi-contractor home interior project.">
-  <title>Agile Leadership in a Home Interior Project | Tanmay</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    :root {
-      --ink: #172033;
-      --muted: #667085;
-      --brand: #3457d5;
-      --brand-dark: #233b96;
-      --soft: #f5f7fb;
-    }
+---
+title: "Agile Leadership in a Home Interior Project"
+category: "Personal project"
+description: "Applying agile leadership principles to a multi-contractor home interior project."
+---
 
-    body { color: var(--ink); }
-    .navbar-brand { letter-spacing: .02em; }
-    .hero {
-      background: linear-gradient(135deg, #172b70 0%, var(--brand) 58%, #4e7cf2 100%);
-      color: #fff;
-    }
-    .eyebrow, .section-eyebrow {
-      color: #b9c8ff;
-      font-size: .8rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    .hero h1 {
-      max-width: 900px;
-      font-size: clamp(2.3rem, 5vw, 4.5rem);
-      letter-spacing: -.04em;
-    }
-    .hero-summary { max-width: 790px; color: #e1e8ff; font-size: 1.15rem; }
-    .hero-meta { border-top: 1px solid rgba(255, 255, 255, .25); }
-    .hero-meta strong { display: block; color: #fff; }
-    .hero-meta span { color: #c9d4ff; font-size: .9rem; }
-    .section-eyebrow { color: var(--brand); }
-    .section-heading { letter-spacing: -.03em; }
-    .soft-section { background: var(--soft); }
-    .content-card, .info-card {
-      border: 1px solid #e7eaf1;
-      border-radius: 1rem;
-      background: #fff;
-      height: 100%;
-    }
-    .content-card { padding: 1.5rem; }
-    .info-card { padding: 1.25rem; }
-    .info-card h3 { font-size: 1rem; margin-bottom: .5rem; }
-    .info-card p, .content-card p, .content-card li {
-      color: var(--muted);
-      line-height: 1.75;
-    }
-    .badge-skill {
-      background: #e9edff;
-      color: var(--brand-dark);
-      font-weight: 600;
-      padding: .6rem .8rem;
-    }
-    .workflow-step { position: relative; padding-left: 3.5rem; }
-    .workflow-step:not(:last-child) { padding-bottom: 2rem; }
-    .workflow-step:not(:last-child)::after {
-      background: #dbe2ff;
-      content: "";
-      height: calc(100% - 1.5rem);
-      left: .75rem;
-      position: absolute;
-      top: 1.5rem;
-      width: 2px;
-    }
-    .step-number {
-      align-items: center;
-      background: var(--brand);
-      border: 4px solid #e9edff;
-      border-radius: 50%;
-      color: #fff;
-      display: flex;
-      height: 1.5rem;
-      justify-content: center;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 1.5rem;
-      z-index: 1;
-      font-size: .75rem;
-      font-weight: 700;
-    }
-    .disclaimer {
-      border-left: 4px solid var(--brand);
-      background: #eef1ff;
-      color: #364152;
-    }
-    .btn-brand { background: var(--brand); color: #fff; }
-    .btn-brand:hover { background: var(--brand-dark); color: #fff; }
-  </style>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="../index.html">Tanmay Kulkarni</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#projectNav"
-        aria-controls="projectNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="projectNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="../index.html#personal-projects">Personal Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero py-5">
+<header class="hero py-5">
     <div class="container py-lg-5">
       <p class="eyebrow mb-3">Personal project case study</p>
       <h1 class="fw-bold mb-4">Agile leadership beyond software development</h1>
-      <p class="hero-summary mb-5">
-        How I coordinated a three-month home interior project across 5–6 independent specialists
-        using dependency management, frequent inspection, and practical trade-off decisions.
-      </p>
+      <p class="hero-summary mb-5">How I coordinated a three-month home interior project across 5–6 independent specialists using dependency management, frequent inspection, and practical trade-off decisions.</p>
       <div class="hero-meta row g-4 pt-4">
         <div class="col-6 col-md-3"><strong>Context</strong><span>Home interior delivery</span></div>
         <div class="col-6 col-md-3"><strong>Team model</strong><span>5–6 specialist contractors</span></div>
@@ -139,18 +25,8 @@
           <div class="col-lg-8">
             <p class="section-eyebrow mb-2">01 / The challenge</p>
             <h2 class="section-heading fw-bold mb-4">Creating visibility and control without a single delivery team</h2>
-            <p class="lead text-secondary">
-              After taking possession of my home, I needed to coordinate furniture, electrical work,
-              lighting, painting, false ceiling, curtains, and related finishing work.
-            </p>
-            <p class="text-secondary mb-0">
-              The conventional interior-design model required handing over the keys for several
-              months, with most decisions made up front and limited visibility during execution.
-              I wanted a delivery approach that reduced rework, kept decisions close to the work,
-              and made trade-offs visible as conditions changed. I checked in with the team on site
-              once or twice each day and made decisions when one specialist’s preferred sequence
-              conflicted with another’s needs.
-            </p>
+            <p class="lead text-secondary">After taking possession of my home, I needed to coordinate furniture, electrical work, lighting, painting, false ceiling, curtains, and related finishing work.</p>
+            <p class="text-secondary mb-0">The conventional interior-design model required handing over the keys for several months, with most decisions made up front and limited visibility during execution. I wanted a delivery approach that reduced rework, kept decisions close to the work, and made trade-offs visible as conditions changed. I checked in with the team on site once or twice each day and made decisions when one specialist’s preferred sequence conflicted with another’s needs.</p>
           </div>
           <div class="col-lg-4">
             <div class="info-card">
@@ -200,11 +76,7 @@
           <div class="col-lg-5">
             <p class="section-eyebrow mb-2">03 / Execution flow</p>
             <h2 class="section-heading fw-bold mb-4">Leading through sequencing, inspection, and adaptation</h2>
-            <p class="text-secondary">
-              Rather than treating the design as a fixed hand-off, I used a staged approach:
-              prepare the next activity, confirm the current result, and adjust based on what was
-              learned on site.
-            </p>
+            <p class="text-secondary">Rather than treating the design as a fixed hand-off, I used a staged approach: prepare the next activity, confirm the current result, and adjust based on what was learned on site.</p>
           </div>
           <div class="col-lg-7">
             <div class="workflow-step">
@@ -276,23 +148,9 @@
           <div class="col-lg-7">
             <p class="section-eyebrow mb-2">06 / Outcome and reflection</p>
             <h2 class="section-heading fw-bold mb-4">What I learned about leading through uncertainty</h2>
-            <p class="text-secondary">
-              A flexible timeline can remove pressure, but it can also reduce urgency. I learned
-              to establish clearer expectations even when a deadline is not externally imposed.
-              I also learned that a distributed team creates real operational constraints: vehicle
-              availability, competing site commitments, and specialist capacity can all create
-              delays that no plan can remove completely.
-            </p>
-            <p class="text-secondary mb-0">
-              The project did not have formal metrics, but it met its practical goals: avoiding
-              unnecessary work and rework, staying around the intended budget, and achieving the
-              desired quality rather than settling for readily available alternatives.
-            </p>
-            <p class="text-secondary mb-0">
-              The practical response to uncertainty is not to seek perfect certainty. It is to make
-              dependencies visible, maintain a short feedback cycle, communicate early, and keep
-              enough flexibility to adapt without losing sight of the outcome.
-            </p>
+            <p class="text-secondary">A flexible timeline can remove pressure, but it can also reduce urgency. I learned to establish clearer expectations even when a deadline is not externally imposed. I also learned that a distributed team creates real operational constraints: vehicle availability, competing site commitments, and specialist capacity can all create delays that no plan can remove completely.</p>
+            <p class="text-secondary mb-0">The project did not have formal metrics, but it met its practical goals: avoiding unnecessary work and rework, staying around the intended budget, and achieving the desired quality rather than settling for readily available alternatives.</p>
+            <p class="text-secondary mb-0">The practical response to uncertainty is not to seek perfect certainty. It is to make dependencies visible, maintain a short feedback cycle, communicate early, and keep enough flexibility to adapt without losing sight of the outcome.</p>
           </div>
           <div class="col-lg-5">
             <div class="content-card">
@@ -301,23 +159,7 @@
             </div>
           </div>
         </div>
-        <p class="disclaimer rounded p-3 mt-5 mb-0">
-          <strong>Scope note:</strong> This was a personal, non-software project. I use it as an example
-          of transferable delivery behaviors—prioritization, dependency management, supplier
-          coordination, risk handling, and feedback—not as evidence of formal Scrum ceremonies or
-          software project delivery.
-        </p>
+        <p class="disclaimer rounded p-3 mt-5 mb-0"><strong>Scope note:</strong> This was a personal, non-software project. I use it as an example of transferable delivery behaviors—prioritization, dependency management, supplier coordination, risk handling, and feedback—not as evidence of formal Scrum ceremonies or software project delivery.</p>
       </div>
     </section>
   </main>
-
-  <footer class="border-top py-4">
-    <div class="container d-flex flex-wrap justify-content-between gap-2">
-      <span class="text-secondary">© 2026 Tanmay Kulkarni</span>
-      <a class="btn btn-sm btn-brand" href="../index.html#personal-projects">Back</a>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>

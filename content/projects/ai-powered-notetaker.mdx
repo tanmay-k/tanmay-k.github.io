@@ -1,20 +1,204 @@
 ---
-title: AI Meeting Notetaker and Talent Performance Platform
-category: AI and talent workflows
-description: A platform for meeting intelligence, structured feedback, and talent performance workflows.
+title: "AI Meeting Notetaker & Talent Performance Platform"
+category: "AI and talent management"
+description: "A pilot collaboration platform for meeting intelligence and talent workflows."
 ---
 
-## Overview
+<header class="hero py-5">
+    <div class="container py-lg-5">
+      <p class="eyebrow mb-3">Project case study</p>
+      <h1 class="fw-bold mb-4">AI Meeting Notetaker &amp; Talent Performance Platform</h1>
+      <p class="hero-summary mb-5">A pilot collaboration platform that exposed meeting-notetaker capabilities through REST APIs, with an administration panel, tenant hierarchy, and an asynchronous meeting lifecycle.</p>
+      <div class="hero-meta row g-4 pt-4">
+        <div class="col-6 col-md-3"><strong>Industry</strong><span>AI and talent management</span></div>
+        <div class="col-6 col-md-3"><strong>Project type</strong><span>Collaboration platform</span></div>
+        <div class="col-6 col-md-3"><strong>Delivery context</strong><span>MVP, 8–12 people</span></div>
+        <div class="col-6 col-md-3"><strong>My role</strong><span>Backend API owner and technical requirements partner</span></div>
+      </div>
+    </div>
+  </header>
 
-The platform captured meeting context and translated it into structured information that teams could use for feedback, development, and performance conversations.
+  <main>
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <p class="section-eyebrow mb-2">01 / Overview</p>
+            <h2 class="section-heading fw-bold mb-4">Turning conversations into useful team knowledge</h2>
+            <p class="lead text-secondary">The platform helps small and medium-sized teams manage talent performance and capture the value of their online meetings.</p>
+            <p class="text-secondary mb-0">Its automated meeting notetaker joins scheduled meetings, records the conversation, generates a transcript, and uses an AI model to produce a concise summary. The backend coordinates scheduling, meeting state, generated artifacts, and access to completed meeting content.</p>
+            <p class="text-secondary mb-0">The MVP supported one meeting platform. An administration panel served administrators, while resellers and tenants used the backend through API-only access secured by API keys. I clarified backend requirements, shaped the API contract, and worked with bot development, frontend, QA, and DevOps teams.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="info-card">
+              <h3>Project goals</h3>
+              <ul class="mb-0 ps-3">
+                <li>Make automated meeting capture easy to schedule.</li>
+                <li>Track each meeting through its processing lifecycle.</li>
+                <li>Give users reliable access to transcripts and summaries.</li>
+                <li>Connect the frontend, notetaker, and AI services consistently.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-## My contribution
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">02 / Key capabilities</p>
+        <h2 class="section-heading fw-bold mb-4">A reliable backend for AI-assisted meetings</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Meeting scheduling</h3>
+              <p class="mb-0">Users can schedule a notetaker session to automatically join an online meeting at a specified time.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Lifecycle visibility</h3>
+              <p class="mb-0">Meetings can be retrieved and managed by lifecycle status, including scheduled, in-progress, and completed states.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-card">
+              <h3 class="h5">Transcript access</h3>
+              <p class="mb-0">After processing is complete, users can access and download the generated meeting transcript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-I worked on backend development, workflow design, stakeholder alignment, and making the product reliable enough for recurring team use.
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-eyebrow mb-2">03 / Meeting lifecycle</p>
+            <h2 class="section-heading fw-bold mb-4">From scheduled session to completed summary</h2>
+            <p class="text-secondary">The application keeps meeting state and generated artifacts aligned as a session moves from a user request through recording and AI processing to a completed meeting.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="workflow-step">
+              <span class="step-number">1</span>
+              <h3 class="h5">Schedule meeting</h3>
+              <p class="mb-0">A user creates a notetaker session with the online meeting details and the time when the notetaker should join.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">2</span>
+              <h3 class="h5">Notetaker joins</h3>
+              <p class="mb-0">At the scheduled time, the notetaker joins the online meeting and the application tracks the session as in progress.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">3</span>
+              <h3 class="h5">Recording and AI processing</h3>
+              <p class="mb-0">The conversation is recorded, transcribed, and processed by an AI model to produce a concise meeting summary.</p>
+            </div>
+            <div class="workflow-step">
+              <span class="step-number">4</span>
+              <h3 class="h5">Transcript and summary generated</h3>
+              <p class="mb-0">The completed meeting exposes its generated artifacts so users can review or download the transcript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-## Capabilities
+    <section class="soft-section py-5">
+      <div class="container py-lg-4">
+        <p class="section-eyebrow mb-2">04 / Technologies and practices</p>
+        <h2 class="section-heading fw-bold mb-4">Clear APIs around a stateful AI workflow</h2>
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">.NET 8</h3>
+              <p class="mb-0">Backend services and REST APIs for meeting scheduling, retrieval, and artifact access.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">Entity Framework Core</h3>
+              <p class="mb-0">Data-access functionality for meeting, scheduling, lifecycle, and transcript-related data.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">REST APIs</h3>
+              <p class="mb-0">A consistent interface between the frontend, meeting-notetaker service, and backend systems.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="content-card">
+              <h3 class="h6">Business rules</h3>
+              <p class="mb-0">Validation and lifecycle rules help keep scheduled meetings and generated artifacts consistent.</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2" aria-label="Technology tags">
+          <span class="badge badge-tech">.NET 8</span>
+          <span class="badge badge-tech">Entity Framework Core</span>
+          <span class="badge badge-tech">LINQ</span>
+          <span class="badge badge-tech">REST APIs</span>
+          <span class="badge badge-tech">AI processing workflow</span>
+          <span class="badge badge-tech">Meeting lifecycle management</span>
+          <span class="badge badge-tech">Request validation</span>
+        </div>
+      </div>
+    </section>
 
-- Meeting notes and structured follow-up
-- Talent and performance workflows
-- Role-based access and operational visibility
-- APIs supporting product and reporting experiences
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <p class="section-eyebrow mb-2">05 / My role</p>
+            <h2 class="section-heading fw-bold mb-4">Building the API layer behind the experience</h2>
+            <p class="text-secondary">I owned backend API implementation and requirements clarification for the MVP, translating ambiguous workflow needs into a stable integration contract for the bot, frontend, QA, DevOps, and future third-party consumers.</p>
+            <ul class="text-secondary lh-lg">
+              <li>Designed the Admin, Reseller, and Tenant hierarchy and implemented API-key authentication for API-only reseller and tenant access.</li>
+              <li>Designed and implemented approximately 20–22 .NET 8 REST APIs for scheduling, retrieving, and managing notetaker sessions through lifecycle states.</li>
+              <li>Implemented and deployed an Azure Function integrated with Service Bus for part of the asynchronous meeting lifecycle.</li>
+              <li>Integrated Azure Key Vault and Blob Storage, using signed URLs to provide secure direct access to generated meeting artifacts.</li>
+              <li>Evaluated .NET unit-testing libraries and demonstrated that xUnit with Coverlet could meet the client’s minimum 70% coverage target; the approach achieved 84% coverage and was adopted by the frontend team.</li>
+              <li>Worked with the bot development team to improve the notetaker’s ability to join the correct meeting, increasing the success rate to more than 90%.</li>
+              <li>Created a portable shell script with AI assistance for scaling and performance test setup, reducing manual QA effort and increasing QA productivity by 50%.</li>
+              <li>Partnered with QA on user-manual documentation by explaining system and API behavior and reviewing content for technical accuracy.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="content-card">
+              <p class="section-eyebrow mb-2">06 / Outcomes</p>
+              <h2 class="section-heading h3 fw-bold mb-4">A dependable path from meeting to insight</h2>
+              <p>The work established a testable, secure backend contract for a cross-functional MVP. The outcomes below focus on delivery quality, integration readiness, workflow reliability, and practices I directly influenced; confidential usage volumes and business adoption are not claimed.</p>
+              <div class="row g-3 mt-2">
+                <div class="col-6"><strong class="d-block fs-4 text-primary">84%</strong><span
+                    class="text-secondary">Unit-test coverage reported by Coverlet</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">20–22</strong><span
+                    class="text-secondary">REST APIs implemented for the MVP</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">90%+</strong><span
+                    class="text-secondary">Correct-meeting join success rate</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">50%</strong><span
+                    class="text-secondary">QA productivity improvement from test automation</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">70%+</strong><span
+                    class="text-secondary">Client coverage target established and exceeded</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">3 levels</strong><span
+                    class="text-secondary">Admin, Reseller, and Tenant hierarchy</span></div>
+                <div class="col-6"><strong class="d-block fs-4 text-primary">2 environments</strong><span
+                    class="text-secondary">MVP deployed to development and testing</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section py-5">
+      <div class="container text-center py-4">
+        <p class="section-eyebrow mb-2">07 / Reflection</p>
+        <h2 class="section-heading fw-bold mb-3">What I learned</h2>
+        <p class="lead text-secondary mx-auto" style={{ maxWidth: "760px" }}>Working on the backend of the AI-Powered Notetaker strengthened my ability to turn ambiguous product needs into clear API contracts, ownership boundaries, and delivery practices that multiple teams could use. Coordinating asynchronous meeting events and working with the bot team showed me how technical alignment can improve reliability, while the xUnit and Coverlet evaluation created a quality standard adopted beyond my immediate backend work. Automating repeatable QA setup also reinforced that technical leadership includes removing friction for partner teams, not only implementing features. The project gave me practical Azure experience while requiring me to learn and apply unfamiliar services quickly.</p>
+        <p class="text-secondary mx-auto mb-0" style={{ maxWidth: "760px" }}>Project details have been generalized to respect confidentiality obligations. The outcomes shown are limited to results I can substantiate from this MVP work.</p>
+        <a class="btn btn-brand mt-3" href="/#projects">Back to projects</a>
+      </div>
+    </section>
+  </main>

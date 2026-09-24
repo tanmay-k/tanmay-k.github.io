@@ -1,5 +1,5 @@
-import { getLegacyContent } from "../lib/legacy-content";
+import { getHomeContent } from "../lib/content";
 
-export default function HomePage() {
-  return <main dangerouslySetInnerHTML={{ __html: getLegacyContent("index.html") }} />;
+export default async function HomePage() {
+  return <>{await getHomeContent()}</>;
 }
