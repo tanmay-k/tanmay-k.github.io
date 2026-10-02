@@ -18,8 +18,9 @@ const plexSans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tanmay Kulkarni | Senior Software Engineer",
-  description: "Portfolio of Tanmay Kulkarni.",
+  title: "Tanmay Kulkarni | Senior Software Engineer transitioning to technical leadership",
+  description:
+    "Portfolio of Tanmay Kulkarni, a senior software engineer transitioning to technical leadership: stakeholder alignment, delivery, mentoring, and team enablement.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
