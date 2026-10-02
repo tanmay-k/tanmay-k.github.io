@@ -87,6 +87,36 @@ export type OutcomeReflectionSectionData = {
   disclaimer?: string;
 };
 
+export type SummarySectionData = {
+  kind: "summary";
+  items: MetaItem[];
+};
+
+export type SequenceStep = { title: string; note: string; decision?: string };
+
+export type SequenceSectionData = {
+  kind: "sequence";
+  soft?: boolean;
+  index: string;
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  steps: SequenceStep[];
+  caption?: string;
+};
+
+export type RetrospectiveColumn = { title: string; items: string[] };
+
+export type RetrospectiveSectionData = {
+  kind: "retrospective";
+  soft?: boolean;
+  index: string;
+  eyebrow: string;
+  heading: string;
+  columns: RetrospectiveColumn[];
+  disclaimer?: string;
+};
+
 export type CaseStudySectionData =
   | IntroSectionData
   | CardGridSectionData
@@ -94,7 +124,10 @@ export type CaseStudySectionData =
   | TechSectionData
   | RoleOutcomesSectionData
   | ReflectionSectionData
-  | OutcomeReflectionSectionData;
+  | OutcomeReflectionSectionData
+  | SummarySectionData
+  | SequenceSectionData
+  | RetrospectiveSectionData;
 
 export type CaseStudyData = {
   hero: HeroData;
