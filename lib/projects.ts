@@ -77,13 +77,13 @@ export const projects: ProjectSummary[] = [
   {
     slug: "agile-leadership-in-home-interior",
     group: "personal",
-    homeTitle: "Agile Leadership in a Home Interior Project",
-    homeMeta: "Independent case study · Delivery leadership",
+    homeTitle: "Coordinating a Multi-Contractor Home Project",
+    homeMeta: "Independent case study · Delivery coordination",
     homeDescription:
-      "A case study on coordinating independent contractors through prioritization, sequencing, stakeholder alignment, and continuous feedback.",
+      "A delivery case study on applying agile principles to a home interior project: sequencing dependent work, daily check-ins, trade-off decisions, and a closing retrospective.",
     homeBadges: [],
-    metaTitle: "Agile Leadership in a Home Interior Project",
-    metaDescription: "Applying agile leadership principles to a multi-contractor home interior project.",
+    metaTitle: "Coordinating a Multi-Contractor Home Project: A Delivery Case Study",
+    metaDescription: "A delivery case study applying agile principles to coordinate a multi-contractor home interior project.",
     linkLabel: "Read case study",
   },
 ];

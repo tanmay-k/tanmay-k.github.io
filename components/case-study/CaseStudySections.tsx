@@ -6,6 +6,9 @@ import { TechSection } from "./TechSection";
 import { RoleOutcomesSection } from "./RoleOutcomesSection";
 import { ReflectionSection } from "./ReflectionSection";
 import { OutcomeReflectionSection } from "./OutcomeReflectionSection";
+import { SummarySection } from "./SummarySection";
+import { SequenceSection } from "./SequenceSection";
+import { RetrospectiveSection } from "./RetrospectiveSection";
 
 export function CaseStudySections({ sections }: { sections: CaseStudySectionData[] }) {
   return (
@@ -26,6 +29,12 @@ export function CaseStudySections({ sections }: { sections: CaseStudySectionData
             return <ReflectionSection key={i} {...section} />;
           case "outcomeReflection":
             return <OutcomeReflectionSection key={i} {...section} />;
+          case "summary":
+            return <SummarySection key={i} {...section} />;
+          case "sequence":
+            return <SequenceSection key={i} {...section} />;
+          case "retrospective":
+            return <RetrospectiveSection key={i} {...section} />;
           default:
             return null;
         }

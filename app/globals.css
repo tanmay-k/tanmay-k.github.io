@@ -180,3 +180,23 @@ body .text-muted { color: var(--muted) !important; }
   .project-item a { grid-column: 2; }
   .contact-panel { flex-direction: column; align-items: flex-start; }
 }
+
+/* case-study: summary, sequence and retrospective sections (new classes only) */
+.case-study .cs-summary { border-left: 4px solid var(--accent); background: var(--surface); border-radius: 0 .75rem .75rem 0; padding: 1rem 1.25rem; box-shadow: 0 8px 24px rgba(27,33,48,.06); }
+.case-study .cs-summary-row { display: grid; grid-template-columns: 6rem 1fr; gap: .25rem 1rem; padding: .4rem 0; }
+.case-study .cs-summary-row + .cs-summary-row { border-top: 1px solid var(--border); }
+.case-study .cs-summary dt { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding-top: .15rem; }
+.case-study .cs-summary dd { margin: 0; color: var(--ink); line-height: 1.6; }
+
+.case-study .cs-sequence { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2rem; }
+.case-study .cs-sequence-step { position: relative; }
+.case-study .cs-sequence-step:not(:last-child)::after { content: "\2193"; position: absolute; left: 50%; bottom: -1.75rem; transform: translateX(-50%); color: var(--brand); font-size: 1.4rem; line-height: 1; }
+.case-study .cs-sequence-number { align-items: center; background: var(--brand); border-radius: 50%; color: #fff; display: inline-flex; font-size: .75rem; font-weight: 700; height: 1.5rem; justify-content: center; margin-bottom: .6rem; width: 1.5rem; }
+.case-study .cs-sequence-decision { margin-top: .75rem; padding-top: .75rem; border-top: 1px dashed var(--border); color: var(--accent) !important; font-size: .9rem; font-weight: 600; }
+.case-study .cs-sequence-caption { font-size: .9rem; font-weight: 600; }
+
+@media (min-width: 900px) {
+  .case-study .cs-sequence { flex-direction: row; gap: 2rem; }
+  .case-study .cs-sequence-step { flex: 1 1 0; }
+  .case-study .cs-sequence-step:not(:last-child)::after { content: "\2192"; left: auto; right: -1.65rem; bottom: auto; top: 2rem; transform: none; }
+}
